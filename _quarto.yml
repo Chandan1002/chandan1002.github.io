@@ -10,8 +10,8 @@ resources:
   - CNAME
 
 website:
-  title: "Chris von Csefalvay"
-  description: "Chris von Csefalvay is a computational epidemiologist/data scientist working at the intersection of AI, epidemiology and public health."
+  title: "Chandan Kumar"
+  description: "Chandan Kumar is a computational epidemiologist/data scientist working at the intersection of AI, epidemiology and public health."
   navbar:
     left:
       - href: index.qmd
