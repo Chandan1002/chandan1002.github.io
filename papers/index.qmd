@@ -12,7 +12,7 @@ title: Papers
 
 # 2023
 
-- **Kumar Chandan**, Jannesari Ali (2023). Optimal Deep Learning Model for UAVs: A Case Study. _Clinical Case Reports_ 2023;**11**:e6798. doi:[10.1002/ccr3.6798](https://doi.org/10.1002/ccr3.6798)
+- **Optimal Deep Learning Model for UAVs: A Case Study.** **Kumar, Chandan**, Jannesari, Ali. *WMPC.* 2023, [doi: 10.1109/WPMC59531.2023.10338971](https://doi.org/10.1109/WPMC59531.2023.10338971).
 
 # 2022
 
