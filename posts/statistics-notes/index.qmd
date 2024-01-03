@@ -7,7 +7,7 @@ categories:
 citation:
   doi: 10.59350/412q0-sbn89
 date: 2023-12-06
-description: Academic AI is a hot mess. Here's why.
+description: Statistics Notes. Here's why.
 google-scholar: true
 image: 4ae87543-b5d3-4373-b691-3fb71d8cf1d0.webp
 title: Stochastic parrots, cap and gown edition
