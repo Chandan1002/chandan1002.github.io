@@ -2,12 +2,12 @@ author:
   - id: cvc
     number: 1
     name:
-      given: Chris
-      family: Csefalvay
-      literal: Chris von Csefalvay
+      given: Chandan
+      family: Kumar
+      literal: Chandan Kumar
       non-dropping-particle: von
-    orcid: 0000-0003-3131-0864
-    email: chris@chrisvoncsefalvay.com
+    orcid: 0000-0003-0138-5312
+    email: chandan1002@gmail.com
 format:
   html:
     df-print: paged

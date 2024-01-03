@@ -11,7 +11,7 @@ resources:
 
 website:
   title: "Chandan Kumar"
-  description: "Chandan Kumar is a computational epidemiologist/data scientist working at the intersection of AI, epidemiology and public health."
+  description: "Chandan Kumar is a computational scientist/data scientist working at the intersection of AI, Deep Learning and Computer Vision."
   navbar:
     left:
       - href: index.qmd
@@ -20,12 +20,14 @@ website:
         text: Papers
       - href: teaching
         text: Teaching
-      - href: media
-        text: Media
+      - href: cv
+        text: CV
+      # - href: media
+      #   text: Media
       - href: posts
-        text: The Notebook
-      - href: https://computationalinfectiousdisease.com
-        text: My book
+        text: My Notes
+      # - href: https://computationalinfectiousdisease.com
+      #   text: My book
   page-footer:
     left: "(c) Chandan Kumar, 2023–. [Disclaimer](disclaimer)"
   twitter-card: true

@@ -39,12 +39,12 @@ comments: false
 I'm a Computer Scientist working at the intersection of AI/ML, Deep Learning and Computer Vision. 
 <!-- I am the author of [Computational Modeling of Infectious Disease](https://computationalinfectiousdisease.com), a richly illustrated compendium on modern computational epidemiology, as well as [a growing body of research](papers). -->
 
-I am currently attending Iowa State University for my Ph.D. I attended Iowa State University for my masters studies, graduating with a distinction (1st class). 
+I am currently attending [Iowa State University](https://www.iastate.edu/) for my Ph.D. (Computer Science). I attended Iowa State University for my Masters of Science (Computer Science), graduating with a distinction (1st class).  Prior to Iowa State, I hold Bachelor of Technology (B. Tech.) Degree from [B.I.T. Sindri](https://www.bitsindri.ac.in/), India, graduating with a distinction (1st class).
 <!-- I also hold degrees from Cardiff and Robert Gordon University Aberdeen, and have studied at the University of Leiden under an Erasmus programme. Today, I am [board certified in public health](https://cph.nbphe.org/employer_letter/19626), a Fellow of the [Royal Society for Public Health](https://www.rsph.org.uk/) and a member of several other learned societies. -->
 
 <!-- I am currently a Practice Directorr at  for Biomedical AI/ML for [HCLTech](https://www.hcltech.com/), where I advise the world's leading life sciences, medical devices and pharma companies on how to leverage AI/ML to improve their products and serve their customers better. I am also a visiting thesis supervisor for students on the data science track of the mathematics programme at the [Budapest University of Technology and Economics](https://www.bme.hu/?language=en). -->
 
-As part of my service to the profession, I've been a reviewer for [ICLR](https://joss.theoj.org/papers/reviewed_by/@chrisvoncsefalvay) and [NeurIPS](https://loop.frontiersin.org/people/1398311/editorial) . 
+As part of my service to the profession, I've been a reviewer for [ICLR](https://iclr.cc/) and [NeurIPS](https://nips.cc/) . 
 
 You can find a [list of my publications here](papers). 
 <!-- My work on COVID-19 has been [featured in the media](media). I also write on various topics as the fancy strikes -- you can peruse my [notebook](blog) here. -->
@@ -68,7 +68,6 @@ You can find a [list of my publications here](papers).
 
 <!-- **VAERS data reveals no increased risk of neuroautoimmune adverse events from COVID- vaccines.** **von Csefalvay, C.** *medRxiv* 2021. [doi: 10.1101/2021.06.13.21258851](https://doi.org/10.1101/2021.06.13.21258851). -->
 
-<!-- **Tuberculous polyserositis in endemic areas with an emphasis on empiric therapy: A case report.** Munguti J, Mutua V, Cheruiyot I, **von Csefalvay C**, Opare-Addo P, Kiko N, Wanjiru R. *Medicine: Case Reports*. 2022, 3(4):e0221. [doi: 10.1097/MD9.0000000000000221](https://doi.org/10.1097/MD9.0000000000000221). -->
 
 See more [here](papers).
 
@@ -76,11 +75,6 @@ See more [here](papers).
 
 [**IEEE**](https://www.ieee.org/) \| Member since 2023
 
-<!-- [**Royal Society for Public Health**](https://www.rsph.org.uk/) \| Fellow since 2021 -->
-
-<!-- [**TOPRA**](https://www.topra.org/) \| Registered Member since 2021 -->
-
-<!-- [**American Public Health Association**](https://www.apha.org/) \| Member since 2021 -->
 
 ## Personal life
 
@@ -98,8 +92,9 @@ In my free time, I enjoy reading , cooking (with not a lot of success).
 date-format: "MMM D, YYYY"
 ---
 <!-- date: 12/22/2023 -->
-Dec/22/2023: Invited to be a reviewer for ICML 2024.
-
+Dec/22/2023 : Invited to be a reviewer for ICML 2024.
+Sept/04/2023 : Invited to be a reviewer for ICLR 2024.
+Apr/10/2023 : Invited to be a reviewer for NeurIPS 2023.
 <!-- ## Pronunciation guide<!-- -->
 
-<!-- My last name rhymes with Chick-Fil-A.--> -->
+<!-- My last name rhymes with Chick-Fil-A.--> 

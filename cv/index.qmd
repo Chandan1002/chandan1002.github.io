@@ -1,0 +1,108 @@
+---
+title: "Chandan Kumar - Curriculum Vitae"
+date: 2023-12-23
+---
+
+<!-- # Chandan Kumar -->
+
+## Contact Information
+
+- **Email:** chandan1002@gmail.com
+- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/chandan1002/)
+- **GitHub:** [Your GitHub Profile](https://github.com/chandan1002)
+
+## Education
+
+### Iowa State University, USA
+- **Degree:** Doctor of Philosophy (Ph.D.) in Computer Science (Focus: Deep Learning, Computer Vision)
+- **Graduation Year:** 2017-Present
+
+### Iowa State University, USA
+- **Degree:** Master of Science in Computer Science
+- **Graduation Year:** 2017-2022
+
+### BIT Sindri, India
+- **Degree:** Bachelor of Technology in Computer Science (With Distinction)
+- **Graduation Year:** 2011-2015
+
+## Work Experience
+
+### Iowa State University
+- **Position:** Graduate Research Assistant
+- **Dates:** January 2023 - Present
+- **Description:** 
+  - Unsupervised Learning approach to Object-Detection. Developed fully unsupervised leaning based object detection algorithm using contrastive learning.
+  - Unsupervised Image retrieval. Developed algorithm to retrieve image using unsupervised learning.
+
+### Hagie Manufacturing (John Deere)
+- **Position:** Data Scientist Coop
+- **Dates:** January 2022 - January 2023
+- **Description:** 
+  - Using tools and techniques to perform Text Mining, ML models development for predictive analysis and automation and Computer Vision models. 
+  - Design and develop project pipeline(Data Exploration, Sampling, Feature Engineering, Model Building, Field Performance Evaluation).
+
+### Iowa State University
+- **Position:** Graduate Research Assistant
+- **Dates:** January 2019 - December 2021
+- **Description:** 
+  - Developed real-time driver assist system for large farm-vehicles. Involved a system of 16 cameras, edge computing and image stitching to utilize the CAN protocols and integrate the mechanism to existing system.
+  - Real-time depth detection and analysis using stereo camera(s). Used stereo camera to develop algorithm that can perform real-time depth detection and calculate volume of objects from the drone.
+
+### Iowa State University
+- **Position:** Graduate Teaching Assistant
+- **Dates:** January 2017 - May 2019
+- **Description:** 
+  - COMS 106 (Introduction to programming using HTML5, CSS, PHP, SQL, JQuery, JavaScript). Responsible for helping students understanding concepts, clearing their doubts and grading assignments.
+
+### EXL(Inductis) Services India Pvt. Ltd.
+- **Position:** Business Analyst
+- **Dates:** February 2016 - December 2016
+- **Description:** 
+  - Utilized applications like SAS to identify trends and relationships between different pieces of data, draw appropriate conclusions and translated analytical findings.
+  - Created and worked on various reporting frameworks (Microsoft Excel, Tableau) that involved customer segmentation and clustering exercises for customers
+
+## Skills
+
+- Languages and Tools: Python, Java, OpenCV, Pytorch,Databricks, Ignition, Alteryx, AWS, Jenkins, IoT, Git, Unix 
+- Web Technologies: HTML, CSS, React, AngularJS, NodeJS.
+
+## Projects
+
+### Project 1
+- **Description:** Brief description of the project.
+- **Technologies Used:** List of technologies used.
+- ...
+
+### Project 2
+- ...
+
+## Certifications
+
+- Certification Name 1
+- Certification Name 2
+- ...
+
+## Awards/Grants
+
+### ACCESS grant supported by NSF (CIS220069)
+- **Description:** Develop algorithm for Unsupervised Object Detection.
+- **Position:** Co-PI.
+- **Grant Amount:** USD 174,000.
+
+## Professional Service
+
+### Invited Speaker
+- **Description:** International 7-in-1 Symposium, CGC, Herning, Denmark.
+
+### Reviewer
+- **Conference:** ICML 2024.
+- **Conference:** ICLR 2024.
+- **Conference:** NeurIPS 2023.
+- **Journal:** Journal of AI Research (JAIR).
+- **Journal:** River Publishers.
+
+## Attachments
+
+### Resume
+- **Description:** Click [here](Resume_Chandan.pdf) to view my resume.
+- **embed:** Resume_Chandan.pdf

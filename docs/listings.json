@@ -2,6 +2,7 @@
   {
     "listing": "/posts/index.html",
     "items": [
+      "/posts/notes-on-activation-functions/index.html",
       "/posts/ai-human-interaction/index.html",
       "/posts/academic-generative-ai/index.html",
       "/posts/auto-doi/index.html",
@@ -17,7 +18,6 @@
       "/posts/asemantic-induction-of-hallucinations/index.html",
       "/posts/data-for-the-next-pandemic/index.html",
       "/posts/dwarf-fortress/index.html",
-      "/posts/a-different-shade-of-grey/index.html",
       "/posts/five-non-data-science-books-for-data-scientists/index.html",
       "/posts/quora-answers/index.html",
       "/posts/as-we-may-see/index.html",
