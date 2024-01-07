@@ -18,8 +18,8 @@ website:
         text: Home
       - href: papers
         text: Papers
-      - href: teaching
-        text: Teaching
+      # - href: teaching
+      #   text: Teaching
       - href: cv
         text: CV
       # - href: media

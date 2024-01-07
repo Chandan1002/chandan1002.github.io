@@ -74,7 +74,7 @@
     "href": "posts/index.html",
     "title": "My Notes",
     "section": "",
-    "text": "Notes on Activation Functions\n\n\n\n\n\n\n\nAI\n\n\nActivation Functions\n\n\n\n\nA note on different activation functions.\n\n\n\n\n\n\n1 Jan 2024\n\n\nChandan Kumar\n\n\n\n\n\n\n  \n\n\n\n\nStochastic parrots, cap and gown edition\n\n\n\n\n\n\n\nAI\n\n\nacademia\n\n\nwriting\n\n\nLLMs\n\n\n\n\nStatistics Notes. Here’s why.\n\n\n\n\n\n\n6 Dec 2023\n\n\nChandan Kumar\n\n\n\n\n\n\nNo matching items\n\nCitationBibTeX citation:@misc{kumar,\n  author = {Chandan Kumar},\n  title = {My {Notes}},\n  langid = {en-GB}\n}\nFor attribution, please cite this work as:\nChandan Kumar. n.d. “My Notes.”"
+    "text": "Statistics in AI\n\n\n\n\n\n\n\nAI\n\n\nStatistics\n\n\nwriting\n\n\n\n\nStatistics Notes. Here’s why.\n\n\n\n\n\n\n6 Jan 2024\n\n\nChandan Kumar\n\n\n\n\n\n\n  \n\n\n\n\nNotes on Activation Functions\n\n\n\n\n\n\n\nAI\n\n\nActivation Functions\n\n\n\n\nA note on different activation functions.\n\n\n\n\n\n\n1 Jan 2024\n\n\nChandan Kumar\n\n\n\n\n\n\nNo matching items\n\nCitationBibTeX citation:@misc{kumar,\n  author = {Chandan Kumar},\n  title = {My {Notes}},\n  langid = {en-GB}\n}\nFor attribution, please cite this work as:\nChandan Kumar. n.d. “My Notes.”"
   },
   {
     "objectID": "posts/skeuomorphic-fallacy/index.html",
@@ -781,14 +781,14 @@
     "href": "posts/notes-on-activation-functions/index.html",
     "title": "Notes on Activation Functions",
     "section": "",
-    "text": "Activation functions are very widely used in neural networks. Activation function is a function that calculates the output of the node. Why is it named activation function? It decides whether the neuron should be activated or not. It calculates the weighted sum and further adds bias to the neuron. They are also known as Transfer Function. Why? It transforms the summed weighted input from the node into an output value to be transferred to the next hidden layer or as output.\n\nBackground\n\n\n\n\n\nWhy activation function\nThe purpose of activation function is to add non-linearity to the neural network.\n\n\nTypes of Activation Functions\nActivation functions are broadly divided into two types: 1. Linear Activation Function 2. Non-Linear Activation Function\n\n\n\n\n\n\n\nThoughts:\n\n\n\n\n\n\n\n\n\n\n\n\nCitationBibTeX citation:@misc{kumar2024,\n  author = {Chandan Kumar},\n  title = {Notes on {Activation} {Functions}},\n  date = {2024-01-01},\n  langid = {en-GB}\n}\nFor attribution, please cite this work as:\nChandan Kumar. 2024. “Notes on Activation Functions.”"
+    "text": "Activation functions are very widely used in neural networks. Activation function is a function that calculates the output of the node. Why is it named activation function? It decides whether the neuron should be activated or not. It calculates the weighted sum and further adds bias to the neuron. They are also known as Transfer Function. Why? It transforms the summed weighted input from the node into an output value to be transferred to the next hidden layer or as output.\n\nBackground\n\n\n\n\n\nWhy activation function\nThe purpose of activation function is to add non-linearity to the neural network.\n\n\nTypes of Activation Functions\nActivation functions are broadly divided into two types:\n\nLinear Activation Function\nNon-Linear Activation Function\n\n\n\n\n\n\n\n\nThoughts:\n\n\n\n\n\n\n\n\n\n\n\n\nCitationBibTeX citation:@misc{kumar2024,\n  author = {Chandan Kumar},\n  title = {Notes on {Activation} {Functions}},\n  date = {2024-01-01},\n  langid = {en-GB}\n}\nFor attribution, please cite this work as:\nChandan Kumar. 2024. “Notes on Activation Functions.”"
   },
   {
     "objectID": "posts/statistics-notes/index.html",
     "href": "posts/statistics-notes/index.html",
-    "title": "Stochastic parrots, cap and gown edition",
+    "title": "Statistics in AI",
     "section": "",
-    "text": "It’s not every day that you find out you have climbed the exalted heights of another discipline. My work is pretty interdisciplinary, but it shocked me, too, that I’m apparently holding forth on neoliberalism and the epistemic question in African universities (archive link):\nThis, of course, came at some surprise to me, as I have never written anything on the topic. I have, however, written a lot about AI, and I have written a thing or two about Africa, so I guess it was only a matter of time before I was conflated with someone else. This time, the unwitting victim deprived of his credit was Prof. Amasa P. Ndofirepi, who is an educational studies scholar at the University of Johannesburg. I have no idea how I ended up being credited with his work, but I’m sure it was an honest mistake.\nThe problem is, with AI, mistakes compound. So if an unwitting student were to ask for a quick literature review of neoliberalism on the subject, they might get something like this from Scispace:\nI mean, that’s flattering, but I’d really rather be credited mostly for my own work. I’m sure Prof. Ndofirepi would agree."
+    "text": "CitationBibTeX citation:@misc{kumar2024,\n  author = {Chandan Kumar},\n  title = {Statistics in {AI}},\n  date = {2024-01-06},\n  langid = {en-GB}\n}\nFor attribution, please cite this work as:\nChandan Kumar. 2024. “Statistics in AI.”"
   },
   {
     "objectID": "posts/statistics-notes/index.html#why-i-care",

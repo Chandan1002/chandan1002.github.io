@@ -33,9 +33,9 @@ The purpose of activation function is to add non-linearity to the neural network
 # Types of Activation Functions
 
 Activation functions are broadly divided into two types:
+
 1. Linear Activation Function
 2. Non-Linear Activation Function
-
 
 <!-- On the other hand, the likelihood of an AI-generated chemical agent ever posing a threat beyond the theoretical is very, very low. There are a few reasons for that, and they’re inherent partly in computational chemistry, partly in weapons design. -->
 

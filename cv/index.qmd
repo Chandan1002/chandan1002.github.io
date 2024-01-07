@@ -66,21 +66,21 @@ date: 2023-12-23
 - Languages and Tools: Python, Java, OpenCV, Pytorch,Databricks, Ignition, Alteryx, AWS, Jenkins, IoT, Git, Unix 
 - Web Technologies: HTML, CSS, React, AngularJS, NodeJS.
 
-## Projects
+<!-- ## Projects -->
 
-### Project 1
-- **Description:** Brief description of the project.
-- **Technologies Used:** List of technologies used.
-- ...
+<!-- ### Project 1 -->
+<!-- - **Description:** Brief description of the project. -->
+<!-- - **Technologies Used:** List of technologies used. -->
+<!-- - ... -->
 
-### Project 2
-- ...
+<!-- ### Project 2 -->
+<!-- - ... -->
 
-## Certifications
+<!-- ## Certifications -->
 
-- Certification Name 1
-- Certification Name 2
-- ...
+<!-- - Certification Name 1 -->
+<!-- - Certification Name 2 -->
+<!-- - ... -->
 
 ## Awards/Grants
 
