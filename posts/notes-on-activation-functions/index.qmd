@@ -8,7 +8,7 @@ description: 'A note on different activation functions.
 
   '
 google-scholar: true
-image: 155mmMustardGasShells-1200x900.jpg
+image: activation.jpeg
 title: Notes on Activation Functions
 ---
 

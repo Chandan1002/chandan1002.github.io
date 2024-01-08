@@ -6,7 +6,7 @@ categories:
 date: 2024-01-06
 description: Statistics Notes. Here's why.
 google-scholar: true
-image: 4ae87543-b5d3-4373-b691-3fb71d8cf1d0.webp
+image: Statistics.jpeg
 title: Statistics in AI
 ---
 
