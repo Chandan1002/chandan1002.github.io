@@ -74,7 +74,7 @@
     "href": "posts/index.html",
     "title": "My Notes",
     "section": "",
-    "text": "Statistics in AI\n\n\n\n\n\n\n\nAI\n\n\nStatistics\n\n\nwriting\n\n\n\n\nStatistics Notes. Here’s why.\n\n\n\n\n\n\n6 Jan 2024\n\n\nChandan Kumar\n\n\n\n\n\n\n  \n\n\n\n\nNotes on Activation Functions\n\n\n\n\n\n\n\nAI\n\n\nActivation Functions\n\n\n\n\nA note on different activation functions.\n\n\n\n\n\n\n1 Jan 2024\n\n\nChandan Kumar\n\n\n\n\n\n\nNo matching items\n\nCitationBibTeX citation:@misc{kumar,\n  author = {Chandan Kumar},\n  title = {My {Notes}},\n  langid = {en-GB}\n}\nFor attribution, please cite this work as:\nChandan Kumar. n.d. “My Notes.”"
+    "text": "Notes on Loss Functions\n\n\n\n\n\n\n\nAI\n\n\nLoss Functions\n\n\n\n\nA note on different loss functions.\n\n\n\n\n\n\n13 Jan 2024\n\n\nChandan Kumar\n\n\n\n\n\n\n  \n\n\n\n\nStatistics in AI\n\n\n\n\n\n\n\nAI\n\n\nStatistics\n\n\nwriting\n\n\n\n\nStatistics Notes. Here’s why.\n\n\n\n\n\n\n6 Jan 2024\n\n\nChandan Kumar\n\n\n\n\n\n\n  \n\n\n\n\nNotes on Activation Functions\n\n\n\n\n\n\n\nAI\n\n\nActivation Functions\n\n\n\n\nA note on different activation functions.\n\n\n\n\n\n\n1 Jan 2024\n\n\nChandan Kumar\n\n\n\n\n\n\nNo matching items\n\nCitationBibTeX citation:@misc{kumar,\n  author = {Chandan Kumar},\n  title = {My {Notes}},\n  langid = {en-GB}\n}\nFor attribution, please cite this work as:\nChandan Kumar. n.d. “My Notes.”"
   },
   {
     "objectID": "posts/skeuomorphic-fallacy/index.html",
@@ -655,7 +655,7 @@
     "href": "index.html#news",
     "title": "Chandan Kumar",
     "section": "News",
-    "text": "News\n\nDec/22/2023 : Invited to be a reviewer for ICML 2024. Sept/04/2023 : Invited to be a reviewer for ICLR 2024. Apr/10/2023 : Invited to be a reviewer for NeurIPS 2023."
+    "text": "News\n\n\nJan/16/2024 : Accepted to attend CIFAR DLRL summer school, 2024.\nDec/22/2023 : Invited to be a reviewer for ICML 2024.\nSept/04/2023 : Invited to be a reviewer for ICLR 2024.\nApr/10/2023 : Invited to be a reviewer for NeurIPS 2023."
   },
   {
     "objectID": "cv/cv.html",
@@ -788,7 +788,7 @@
     "href": "posts/statistics-notes/index.html",
     "title": "Statistics in AI",
     "section": "",
-    "text": "CitationBibTeX citation:@misc{kumar2024,\n  author = {Chandan Kumar},\n  title = {Statistics in {AI}},\n  date = {2024-01-06},\n  langid = {en-GB}\n}\nFor attribution, please cite this work as:\nChandan Kumar. 2024. “Statistics in AI.”"
+    "text": "It is a statistical method that compares how the model compares against actual observed data."
   },
   {
     "objectID": "posts/statistics-notes/index.html#why-i-care",
@@ -810,5 +810,26 @@
     "title": "Stochastic parrots, cap and gown edition",
     "section": "What can we do about it?",
     "text": "What can we do about it?\nMost ‘academic AI’ applications are riding on the crest of a wave of high expectations that surround everything AI-related right now. They offer to be useful aides-de-camp to beleaguered academics who have to contend with exponentially growing literature, but in reality fall far short of that promise. And the inherent ‘black box’ nature of such models means that it’s not always easy to tell when they’re wrong.\nAt this point, perhaps the best we can do is to hold off on using generative AI tools for academic research until they’re better. We’re not there yet. We’re not even close. For highly domain specific applications, retrieval-augmented generation (RAG) approaches utilising a curated knowledge base of publications in that realm has proven to be a very useful approach indeed, but those are specialised tools that are at the present primarily in the purview of private industry. I’ve seen some great applications in this field, and I see this as another proof point for my assertion that the future belongs to ecosystems of small, specialised language models rather than one big model that does everything.\nFor the time being, we’re going to have to do things the old-fashioned way: reading the literature and writing our own reviews. I know, it’s not very fun. But it’s the only way to do it right, and we’ve managed with that for the last few hundred years. Giving it another few years won’t hurt."
+  },
+  {
+    "objectID": "posts/statistics-notes/index.html#bayes-theorem",
+    "href": "posts/statistics-notes/index.html#bayes-theorem",
+    "title": "Statistics in AI",
+    "section": "Bayes’ Theorem",
+    "text": "Bayes’ Theorem\nBayes Theorem is a mathematical formula to determine conditional probability.\nBayes theorem relies on prior probability to generate posterior probability."
+  },
+  {
+    "objectID": "posts/statistics-notes/index.html#chi-square-test",
+    "href": "posts/statistics-notes/index.html#chi-square-test",
+    "title": "Statistics in AI",
+    "section": "",
+    "text": "It is a statistical method that compares how the model compares against actual observed data."
+  },
+  {
+    "objectID": "posts/loss-functions/index.html",
+    "href": "posts/loss-functions/index.html",
+    "title": "Notes on Loss Functions",
+    "section": "",
+    "text": "Loss Function or Cost Function or Error Function\n\nBackground\n\n\nWhy Loss function\nThe purpose of loss function is to quantify the error between the output of an algorithm and the given target value.\n\nLet’s say that I have 100 pieces of something and I want the algorithm to predict the number of pieces available. Here, 100 pieces are the ground truth or the target value. Now, if the algorithm predicts that there are only 90 pieces, there is a loss or error of 10 pieces.\n\n\n\nTypes of Loss Functions\n\nNCE\nInfoNCE\nNT-Xent\nContrastive Loss\nTriplet Loss\n\n\n\nThoughts:\n\n\n\n\nCitationBibTeX citation:@misc{kumar2024,\n  author = {Chandan Kumar},\n  title = {Notes on {Loss} {Functions}},\n  date = {2024-01-13},\n  langid = {en-GB}\n}\nFor attribution, please cite this work as:\nChandan Kumar. 2024. “Notes on Loss Functions.”"
   }
 ]

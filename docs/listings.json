@@ -2,6 +2,7 @@
   {
     "listing": "/posts/index.html",
     "items": [
+      "/posts/loss-functions/index.html",
       "/posts/statistics-notes/index.html",
       "/posts/notes-on-activation-functions/index.html"
     ]

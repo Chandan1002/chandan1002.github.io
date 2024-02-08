@@ -9,6 +9,15 @@ google-scholar: true
 image: Statistics.jpeg
 title: Statistics in AI
 ---
+## Chi-Square Test
+
+It is a statistical method that compares how the model compares against actual observed data.
+
+## Bayes' Theorem
+
+Bayes Theorem is a mathematical formula to determine conditional probability.
+
+Bayes theorem relies on prior probability to generate posterior probability.
 
 <!-- It's not every day that you find out you have climbed the exalted heights of another discipline. My work is pretty interdisciplinary, but it shocked me, too, that I'm apparently holding forth on neoliberalism and the epistemic question in African universities ([archive link](https://archive.is/MgSAW)): -->
 

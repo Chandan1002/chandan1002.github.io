@@ -30,7 +30,7 @@ about:
         #   url: https://www.webofscience.com/wos/author/record/IZD-6900-2023
         # - text: "{{< ai osf >}} OSF"
         #   url: https://osf.io/awhgj
-image: img/IMG_8459.JPG
+image: img/ChandanKumar.JPG
 comments: false
 ---
 
@@ -92,9 +92,10 @@ In my free time, I enjoy reading , cooking (with not a lot of success).
 date-format: "MMM D, YYYY"
 ---
 <!-- date: 12/22/2023 -->
-Dec/22/2023 : Invited to be a reviewer for ICML 2024.
-Sept/04/2023 : Invited to be a reviewer for ICLR 2024.
-Apr/10/2023 : Invited to be a reviewer for NeurIPS 2023.
+- Jan/16/2024 : Accepted to attend CIFAR DLRL summer school, 2024.
+- Dec/22/2023 : Invited to be a reviewer for ICML 2024.
+- Sept/04/2023 : Invited to be a reviewer for ICLR 2024.
+- Apr/10/2023 : Invited to be a reviewer for NeurIPS 2023.
 <!-- ## Pronunciation guide<!-- -->
 
 <!-- My last name rhymes with Chick-Fil-A.--> 
