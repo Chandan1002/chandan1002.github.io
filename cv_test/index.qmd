@@ -1,0 +1,12 @@
+---
+title: My CV
+output:
+  html_document: 
+    pandoc_args: "--pdf-engine=xelatex"
+---
+
+# My Curriculum Vitae
+
+You can download a PDF version of my CV [here](cv.pdf).
+
+<iframe src="cv.pdf" width="100%" height="600px">

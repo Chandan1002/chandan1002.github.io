@@ -9,10 +9,13 @@ title: Papers
 <!-- - **von Csefalvay C**, Nam D T, Melis A, Halonen M, Edison S, Kozdon J, Kwong T, Glaser F, Frid Y, Szarnyas G, Crusius K, de Oliveira Castro PR, Hassler G, Clark AR, Visser M (2021). Learn Julia the Hard Way. [https://doi.org/10.5281/zenodo.4556324](https://doi.org/10.5281/zenodo.4556324) -->
 
 <!-- references -->
+# 2024
+
+- **Discerning Self-supervised Learning and Weakly Supervised Learning.** **Kumar, Chandan**, Matthew Darr, Jannesari, Ali. *ICLR.* 2024
 
 # 2023
 
-- **Optimal Deep Learning Model for UAVs: A Case Study.** **Kumar, Chandan**, Jannesari, Ali. *WMPC.* 2023, [doi: 10.1109/WPMC59531.2023.10338971](https://doi.org/10.1109/WPMC59531.2023.10338971).
+- **Optimal Deep Learning Model for UAVs: A Case Study.** **Kumar, Chandan**, Jannesari, Ali. *International Symposium on Wireless Personal Multimedia Communications (WPMC)* 2023, [doi: 10.1109/WPMC59531.2023.10338971](https://doi.org/10.1109/WPMC59531.2023.10338971).
 
 # 2022
 

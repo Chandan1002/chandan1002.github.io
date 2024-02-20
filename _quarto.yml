@@ -26,6 +26,8 @@ website:
       #   text: Media
       - href: posts
         text: My Notes
+      #- href: cv_test
+      #  text: test
       # - href: https://computationalinfectiousdisease.com
       #   text: My book
   page-footer:

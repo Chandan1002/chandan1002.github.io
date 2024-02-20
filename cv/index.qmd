@@ -1,24 +1,38 @@
 ---
 title: "Chandan Kumar - Curriculum Vitae"
-date: 2023-12-23
+date: "`r format(Sys.Date(), '%Y-%m-%d')`"
+format:
+  html:
+    toc: true
+  pdf:
+    author: Chandan Kumar
+    pdf-engine: weasyprint
+css: cv.css
+format-links: [pdf]
 ---
+
+::: {.print-only .contact-block}
+chandan@iastate.edu
+:::
 
 <!-- # Chandan Kumar -->
 
 ## Contact Information
 
 - **Email:** chandan1002@gmail.com
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/chandan1002/)
-- **GitHub:** [Your GitHub Profile](https://github.com/chandan1002)
+- **LinkedIn:** [chandan1002](https://www.linkedin.com/in/chandan1002/)
+- **GitHub:** [chandan1002](https://github.com/chandan1002)
 
 ## Education
 
 ### Iowa State University, USA
-- **Degree:** Doctor of Philosophy (Ph.D.) in Computer Science (Focus: Deep Learning, Computer Vision)
+- **Degree:** Doctor of Philosophy (Ph.D.), Computer Science (Focus: Deep Learning, Computer Vision)
+- **Advisor:** Dr. Ali Jannesari and Dr. Matthew Darr
 - **Graduation Year:** 2017-Present
 
 ### Iowa State University, USA
-- **Degree:** Master of Science in Computer Science
+- **Degree:** Master of Science, Computer Science
+- **Advisor:** Dr. Ali Jannesari
 - **Graduation Year:** 2017-2022
 
 ### BIT Sindri, India
@@ -31,13 +45,17 @@ date: 2023-12-23
 - **Position:** Graduate Research Assistant
 - **Dates:** January 2023 - Present
 - **Description:** 
+  - Skills Used: Python, Pytorch, bash scripts, slurm.
   - Unsupervised Learning approach to Object-Detection. Developed fully unsupervised leaning based object detection algorithm using contrastive learning.
   - Unsupervised Image retrieval. Developed algorithm to retrieve image using unsupervised learning.
+  - Scaling Unsupervised Learning algorithm to HPC(High Performance Computing). 
 
 ### Hagie Manufacturing (John Deere)
 - **Position:** Data Scientist Coop
 - **Dates:** January 2022 - January 2023
 - **Description:** 
+  - President award winner for extraordinary performance.
+  - Skills Used: Alteryx, Ignition SCADA, Databricks, PowerBI, Microsoft Excel,AWS, RabbitMQ, Python, OpenCV, Pytorch.   
   - Using tools and techniques to perform Text Mining, ML models development for predictive analysis and automation and Computer Vision models. 
   - Design and develop project pipeline(Data Exploration, Sampling, Feature Engineering, Model Building, Field Performance Evaluation).
 
@@ -45,6 +63,7 @@ date: 2023-12-23
 - **Position:** Graduate Research Assistant
 - **Dates:** January 2019 - December 2021
 - **Description:** 
+  - Skills Used: CAN-Bus, Python, OpenCV, POE, Pytorch, ROS
   - Developed real-time driver assist system for large farm-vehicles. Involved a system of 16 cameras, edge computing and image stitching to utilize the CAN protocols and integrate the mechanism to existing system.
   - Real-time depth detection and analysis using stereo camera(s). Used stereo camera to develop algorithm that can perform real-time depth detection and calculate volume of objects from the drone.
 
@@ -58,6 +77,8 @@ date: 2023-12-23
 - **Position:** Business Analyst
 - **Dates:** February 2016 - December 2016
 - **Description:** 
+  - Awarded Rising Star Award (1 of 6 awardees out of 37,000+ employees)
+  - Skills used: SAS, SQL, IBM-Netezza, DB2,Tableau, R, Python, Microsoft Excel. 
   - Utilized applications like SAS to identify trends and relationships between different pieces of data, draw appropriate conclusions and translated analytical findings.
   - Created and worked on various reporting frameworks (Microsoft Excel, Tableau) that involved customer segmentation and clustering exercises for customers
 
@@ -95,11 +116,16 @@ date: 2023-12-23
 - **Description:** International 7-in-1 Symposium, CGC, Herning, Denmark.
 
 ### Reviewer
+- **Conference:** ECCV 2024.
 - **Conference:** ICML 2024.
 - **Conference:** ICLR 2024.
 - **Conference:** NeurIPS 2023.
 - **Journal:** Journal of AI Research (JAIR).
 - **Journal:** River Publishers.
+
+## Professional Memberships
+- IEEE
+- IEEE Computer Society
 
 ## Attachments
 
