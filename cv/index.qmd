@@ -45,7 +45,7 @@ chandan@iastate.edu
 - **Position:** Graduate Research Assistant
 - **Dates:** January 2023 - Present
 - **Description:** 
-  - Skills Used: Python, Pytorch, bash scripts, slurm.
+  - Skills Used: Python, Pytorch, CUDA, bash scripts, slurm.
   - Unsupervised Learning approach to Object-Detection. Developed fully unsupervised leaning based object detection algorithm using contrastive learning.
   - Unsupervised Image retrieval. Developed algorithm to retrieve image using unsupervised learning.
   - Scaling Unsupervised Learning algorithm to HPC(High Performance Computing). 
@@ -84,7 +84,7 @@ chandan@iastate.edu
 
 ## Skills
 
-- Languages and Tools: Python, Java, OpenCV, Pytorch,Databricks, Ignition, Alteryx, AWS, Jenkins, IoT, Git, Unix 
+- Languages and Tools: Python, Java, OpenCV, Pytorch,CUDA, Databricks, Ignition, Alteryx, AWS, Jenkins, IoT, Git, Unix 
 - Web Technologies: HTML, CSS, React, AngularJS, NodeJS.
 
 <!-- ## Projects -->
@@ -126,6 +126,7 @@ chandan@iastate.edu
 ## Professional Memberships
 - IEEE
 - IEEE Computer Society
+- Cohere for AI
 
 ## Attachments
 
