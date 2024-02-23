@@ -7,9 +7,9 @@ WR_LINK: str = "https://www.concept2.com/skierg/motivation/records/adaptive-worl
 TIME_EVENTS = [1, 4, 30, 60]
 
 def count_times_of_world_records(link: str = WR_LINK) -> int:
-    """Count the number of times Chris von Csefalvay holds a world record based on the linked site."""
+    """Count the number of times Chandan Kumar holds a world record based on the linked site."""
     soup = bs4.BeautifulSoup(requests.get(link).text, "html.parser")
-    return len(soup.find_all("td", string="Chris von Csefalvay"))
+    return len(soup.find_all("td", string="Chandan Kumar"))
 
 
 def get_world_records(link: str = WR_LINK) -> list:
@@ -23,7 +23,7 @@ def get_world_records(link: str = WR_LINK) -> list:
     results = []
     for row in table.find_all("tr"):
         cells = row.find_all("td")
-        if len(cells) > 3 and cells[3].string == "Chris von Csefalvay":
+        if len(cells) > 3 and cells[3].string == "Chandan Kumar":
             results.append(cells[1].string)
 
     # Sort results, with distance events first and sorted by distance, then time events.

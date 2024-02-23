@@ -17,7 +17,7 @@ def read_bibtex_file(filename) -> dict:
     return entries_by_year
 
 
-def process_authors_to_string_with_highlighting(authors: str, highlight_name: str = "csefalvay") -> str:
+def process_authors_to_string_with_highlighting(authors: str, highlight_name: str = "chandan") -> str:
     authors = authors.split(" and ")
     authors = [author.split(", ") for author in authors]
     authors = [f"{author[0]} {author[1][0]}" for author in authors]
