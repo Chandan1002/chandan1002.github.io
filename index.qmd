@@ -54,7 +54,7 @@ You can find a [list of my publications here](papers).
 
 ## Key research interests
 
--   **Deep Learning**: Unsupervised Learning algorithm, Unsupervised object retrieval.
+-   **Deep Learning**: Unsupervised Learning algorithms, Unsupervised object retrieval.
 -   **Computer Vision**: Object Detection.
 
 ## Teaching

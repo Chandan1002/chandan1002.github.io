@@ -36,5 +36,11 @@ The purpose of loss function is to quantify the error between the output of an a
 - Contrastive Loss
 - Triplet Loss
 
+InfoNCE (Information Noise Contrastive Estimation) loss uses
+
+NT-XENT (Normalized Temperature scaled Cross entropy) loss is a variant of InfoNCE loss that introduces a temperature parameter to control the smoothness of the similarity distribution, which can help with training stability and convergence. The higher temperature (Tau) encourages a softer distribution, making it easier for the model to distinguish between positive and negative sample.
+
+
+
 # Thoughts:
 
