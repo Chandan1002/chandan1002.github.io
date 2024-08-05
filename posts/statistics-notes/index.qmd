@@ -22,6 +22,14 @@ Bayes theorem relies on prior probability to generate posterior probability.
 
 ## Correlation
 
+It is a statistical measure that describes the degree to which two variables change together. 
+Correlation coefficient such as Pearson's correlation coefficient ranges from -1 to 1.
+1  => Perfect positive correlation. This implies that if one variable increases then the other variable also increases proportionally.
+-1 => Perfect negative correlation. This implies that if one variable increases then the other variable also decreases proportionally.
+0  => No linear correlation between variables.
+
+Correlation does not imply causation.
+
 <!-- It's not every day that you find out you have climbed the exalted heights of another discipline. My work is pretty interdisciplinary, but it shocked me, too, that I'm apparently holding forth on neoliberalism and the epistemic question in African universities ([archive link](https://archive.is/MgSAW)): -->
 
 <!-- ![Apparently, I'm commenting on neoliberalism in African universities.](scispace.png){#fig-scispace} -->
