@@ -39,18 +39,15 @@ comments: false
 
 ## Bio
 
-I'm a Computer Scientist working at the intersection of AI/ML, Deep Learning and Computer Vision. Now working at Oak Ridge National Lab.
-<!-- I am the author of [Computational Modeling of Infectious Disease](https://computationalinfectiousdisease.com), a richly illustrated compendium on modern computational epidemiology, as well as [a growing body of research](papers). -->
+I'm a Computer Scientist working at the intersection of AI/ML, Deep Learning and Computer Vision. Now working at Oak Ridge National Lab. <!-- I am the author of [Computational Modeling of Infectious Disease](https://computationalinfectiousdisease.com), a richly illustrated compendium on modern computational epidemiology, as well as [a growing body of research](papers). -->
 
-I am currently attending [Iowa State University](https://www.iastate.edu/) for my Ph.D. (Computer Science). I attended Iowa State University for my Masters of Science (Computer Science), graduating with a distinction (1st class).  Prior to Iowa State, I hold Bachelor of Technology (B. Tech.) Degree from [B.I.T. Sindri](https://www.bitsindri.ac.in/), India, graduating with a distinction (1st class).
-<!-- I also hold degrees from Cardiff and Robert Gordon University Aberdeen, and have studied at the University of Leiden under an Erasmus programme. Today, I am [board certified in public health](https://cph.nbphe.org/employer_letter/19626), a Fellow of the [Royal Society for Public Health](https://www.rsph.org.uk/) and a member of several other learned societies. -->
+I am currently attending [Iowa State University](https://www.iastate.edu/) for my Ph.D. (Computer Science). I attended Iowa State University for my Masters of Science (Computer Science), graduating with a distinction (1st class). Prior to Iowa State, I hold Bachelor of Technology (B. Tech.) Degree from [B.I.T. Sindri](https://www.bitsindri.ac.in/), India, graduating with a distinction (1st class). <!-- I also hold degrees from Cardiff and Robert Gordon University Aberdeen, and have studied at the University of Leiden under an Erasmus programme. Today, I am [board certified in public health](https://cph.nbphe.org/employer_letter/19626), a Fellow of the [Royal Society for Public Health](https://www.rsph.org.uk/) and a member of several other learned societies. -->
 
 <!-- I am currently a Practice Directorr at  for Biomedical AI/ML for [HCLTech](https://www.hcltech.com/), where I advise the world's leading life sciences, medical devices and pharma companies on how to leverage AI/ML to improve their products and serve their customers better. I am also a visiting thesis supervisor for students on the data science track of the mathematics programme at the [Budapest University of Technology and Economics](https://www.bme.hu/?language=en). -->
 
-As part of my service to the profession, I've been a reviewer for [ICLR](https://iclr.cc/) and [NeurIPS](https://nips.cc/), ICML, ECCV . 
+As part of my service to the profession, I've been a reviewer for [ICLR](https://iclr.cc/) and [NeurIPS](https://nips.cc/), ICML, ECCV .
 
-You can find a [list of my publications here](papers). 
-<!-- My work on COVID-19 has been [featured in the media](media). I also write on various topics as the fancy strikes -- you can peruse my [notebook](blog) here. -->
+You can find a [list of my publications here](papers). <!-- My work on COVID-19 has been [featured in the media](media). I also write on various topics as the fancy strikes -- you can peruse my [notebook](blog) here. -->
 
 ## Key research interests
 
@@ -71,7 +68,6 @@ You can find a [list of my publications here](papers).
 
 <!-- **VAERS data reveals no increased risk of neuroautoimmune adverse events from COVID- vaccines.** **von Csefalvay, C.** *medRxiv* 2021. [doi: 10.1101/2021.06.13.21258851](https://doi.org/10.1101/2021.06.13.21258851). -->
 
-
 See more [here](papers).
 
 ## Professional affiliations
@@ -80,29 +76,28 @@ See more [here](papers).
 
 IEEE Computer Society \| Member since 2024
 
-
 ## Personal life
 
 I currently reside in Ames, IA, USA, though my roots trace back to Bihar, India. During my formative years, I resided in Mussoorie, India, where I pursued my education at Oak Grove School. Since 2017, I have called the United States my home, where I am currently pursuing my studies.
 
-During my leisure hours, I indulge in reading and attempting to cook, albeit with limited success.
-<!-- and Renaissance polyphony (esp. Thomas Tallis and Orlando di Lasso). I'm credited for a somewhat pretty sequence of integers called Jellyfish Heart numbers ([OEIS A344856](https://oeis.org/A344856)), which I discovered in 2020 while doing something that has nothing at all to do with my day job. -->
+During my leisure hours, I indulge in reading and attempting to cook, albeit with limited success. <!-- and Renaissance polyphony (esp. Thomas Tallis and Orlando di Lasso). I'm credited for a somewhat pretty sequence of integers called Jellyfish Heart numbers ([OEIS A344856](https://oeis.org/A344856)), which I discovered in 2020 while doing something that has nothing at all to do with my day job. -->
 
 <!-- I live with [neuromyelitis optica](https://en.wikipedia.org/wiki/Neuromyelitis_optica) since 2015, which has left me with a lifelong desire to understand complex, multicausal health conditions like NMOSD better. -->
 
-
 ## News
+
 ---
 <!-- date: 12/22/2023 -->
 date-format: "MMM D, YYYY"
 ---
-<!-- date: 12/22/2023 -->
-- Feb/15/2024 : My research paper gets accepted at ICLR 2024.
-- Feb/14/2024 : Invited to be a reviewer for ECCV 2024.
-- Jan/16/2024 : Accepted to attend CIFAR DLRL summer school, 2024.
-- Dec/22/2023 : Invited to be a reviewer for ICML 2024.
-- Sept/04/2023 : Invited to be a reviewer for ICLR 2024.
-- Apr/10/2023 : Invited to be a reviewer for NeurIPS 2023.
-<!-- ## Pronunciation guide<!-- -->
 
-<!-- My last name rhymes with Chick-Fil-A.--> 
+<!-- date: 12/22/2023 -->
+
+-   Feb/15/2024 : My research paper gets accepted at ICLR 2024.
+-   Feb/14/2024 : Invited to be a reviewer for ECCV 2024.
+-   Jan/16/2024 : Accepted to attend CIFAR DLRL summer school, 2024.
+-   Dec/22/2023 : Invited to be a reviewer for ICML 2024.
+-   Sept/04/2023 : Invited to be a reviewer for ICLR 2024.
+-   Apr/10/2023 : Invited to be a reviewer for NeurIPS 2023. <!-- ## Pronunciation guide<!-- -->
+
+<!-- My last name rhymes with Chick-Fil-A.-->

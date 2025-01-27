@@ -3,9 +3,11 @@ project:
   output-dir: .
   pre-render:
     - scripts/pre_create_papers_file.py
-    - scripts/pre_check_skierg_records.py
+   # - scripts/pre_check_skierg_records.py
     - scripts/pre_doi_from_rogue_scholar.py
     - scripts/pre_canonicalise_tags.py
+python:
+  path: "/Users/ck/.virtualenvs/r-reticulate/bin/python"
 resources:
   - CNAME
 
@@ -38,9 +40,9 @@ website:
 
 format:
   html:
-    theme:
-      - cosmo
-      - custom.scss
+    theme: default
+      #- cosmo
+     # - custom.scss
     toc: true
     toc_depth: 3
     toc_float: true
