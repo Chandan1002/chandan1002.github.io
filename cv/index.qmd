@@ -131,5 +131,5 @@ chandan@iastate.edu
 ## Attachments
 
 ### Resume
-- **Description:** Click [here](Resume_Chandan.pdf) to view my resume.
-- **embed:** Resume_Chandan.pdf
+- **Description:** Click [here](CVChandan.pdf) to view my resume.
+- **embed:** CVChandan.pdf
