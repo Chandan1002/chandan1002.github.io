@@ -39,7 +39,7 @@ comments: false
 
 ## Bio
 
-I'm a Computer Scientist working at the intersection of AI/ML, Deep Learning and Computer Vision. 
+I'm a Computer Scientist working at the intersection of AI/ML, Deep Learning and Computer Vision. Now working at Oak Ridge National Lab.
 <!-- I am the author of [Computational Modeling of Infectious Disease](https://computationalinfectiousdisease.com), a richly illustrated compendium on modern computational epidemiology, as well as [a growing body of research](papers). -->
 
 I am currently attending [Iowa State University](https://www.iastate.edu/) for my Ph.D. (Computer Science). I attended Iowa State University for my Masters of Science (Computer Science), graduating with a distinction (1st class).  Prior to Iowa State, I hold Bachelor of Technology (B. Tech.) Degree from [B.I.T. Sindri](https://www.bitsindri.ac.in/), India, graduating with a distinction (1st class).
