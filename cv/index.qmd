@@ -28,22 +28,22 @@ chandan@iastate.edu
 ### Iowa State University, USA
 - **Degree:** Doctor of Philosophy (Ph.D.), Computer Science (Focus: Deep Learning, Computer Vision)
 - **Advisor:** Dr. Ali Jannesari and Dr. Matthew Darr
-- **Graduation Year:** 2017-Present
+- **Graduation Year:** May 2025
 
 ### Iowa State University, USA
 - **Degree:** Master of Science, Computer Science
 - **Advisor:** Dr. Ali Jannesari
-- **Graduation Year:** 2017-2022
+- **Graduation Year:** Dec 2022
 
 ### BIT Sindri, India
 - **Degree:** Bachelor of Technology in Computer Science (With Distinction)
-- **Graduation Year:** 2011-2015
+- **Graduation Year:** June 2015
 
 ## Work Experience
 
 ### Iowa State University
 - **Position:** Graduate Research Assistant
-- **Dates:** January 2023 - Present
+- **Dates:** January 2023 - August 2024
 - **Description:** 
   - Skills Used: Python, Pytorch, CUDA, bash scripts, slurm.
   - Unsupervised Learning approach to Object-Detection. Developed fully unsupervised leaning based object detection algorithm using contrastive learning.
@@ -131,5 +131,5 @@ chandan@iastate.edu
 ## Attachments
 
 ### Resume
-- **Description:** Click [here](Resume_Chandan.pdf) to view my resume.
-- **embed:** Resume_Chandan.pdf
+- **Description:** Click [here](CVChandan.pdf) to view my resume.
+- **embed:** CVChandan.pdf
