@@ -39,11 +39,11 @@ website:
       - href: posts/
         text: My Notes
 
-      - href: Teaching/
+      - href: teaching/
         text: Teaching  
 
       - href: My_Lab/
-        text: VAI
+        text: ''
 
     right:
       - icon: github

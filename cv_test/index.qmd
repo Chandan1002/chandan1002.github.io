@@ -10,3 +10,232 @@ output:
 You can download a PDF version of my CV [here](cv.pdf).
 
 <iframe src="cv.pdf" width="100%" height="600px">
+
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700&display=swap');
+
+/* all formats */
+
+.cvdate {
+  float: right;
+  font-style: italic
+}
+
+.print-only {
+  display: none;
+  /*color: aquamarine;*/
+}
+
+/* adapt stylesheet for print
+from: https://github.com/quarto-dev/quarto-cli/discussions/2538#discussioncomment-4081842 */
+
+/* for page-breaks use style spans
+  page-break-before: always;
+  page-break-after: always;
+*/
+
+@media print {
+  @page {
+      size: a4 portrait;
+      counter-increment: page;
+      @bottom-center {
+        content: counter(page)
+      }
+  }
+  .no-print {
+      display: none;
+  }
+  .print-only {
+      display: block;
+  }
+
+  .contact-block {
+      margin-top: 0%;
+      text-align: center;
+  }
+
+  html {
+    font-family: 'Public Sans', sans-serif;
+  }
+
+  header {
+    margin-block-end: 5em;
+  }
+  header h1.title {
+      display: none;
+  }
+  header .author {
+    font-size: 1em;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    margin-block-end: 0em;
+    margin-bottom: 0;
+    text-transform: capitalize;
+  }
+
+  h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    /* color: blueviolet; */
+  }
+
+  h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+    /* color: green; */
+  }
+
+  p {
+    font-size: small;
+  }
+
+  ul li{
+    font-size: smaller;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #36a7e9;
+  }
+}
+
+
+qmd from cv
+
+---
+title: "Chandan Kumar - Curriculum Vitae"
+date: "`r format(Sys.Date(), '%Y-%m-%d')`"
+format:
+  html:
+    toc: true
+  pdf:
+    author: Chandan Kumar
+    pdf-engine: weasyprint
+css: cv.css
+format-links: [pdf]
+---
+
+::: {.print-only .contact-block}
+chandan@iastate.edu
+:::
+
+<!-- # Chandan Kumar -->
+
+## Contact Information
+
+- **Email:** chandan1002@gmail.com
+- **LinkedIn:** [chandan1002](https://www.linkedin.com/in/chandan1002/)
+- **GitHub:** [chandan1002](https://github.com/chandan1002)
+
+## Education
+
+### Iowa State University, USA
+- **Degree:** Doctor of Philosophy (Ph.D.), Computer Science (Focus: Deep Learning, Computer Vision)
+- **Advisor:** Dr. Ali Jannesari and Dr. Matthew Darr
+- **Graduation Year:** May 2025
+
+### Iowa State University, USA
+- **Degree:** Master of Science, Computer Science
+- **Advisor:** Dr. Ali Jannesari
+- **Graduation Year:** Dec 2022
+
+### BIT Sindri, India
+- **Degree:** Bachelor of Technology in Computer Science (With Distinction)
+- **Graduation Year:** June 2015
+
+## Work Experience
+
+### Iowa State University
+- **Position:** Graduate Research Assistant
+- **Dates:** January 2023 - August 2024
+- **Description:** 
+  - Skills Used: Python, Pytorch, CUDA, bash scripts, slurm.
+  - Unsupervised Learning approach to Object-Detection. Developed fully unsupervised leaning based object detection algorithm using contrastive learning.
+  - Unsupervised Image retrieval. Developed algorithm to retrieve image using unsupervised learning.
+  - Scaling Unsupervised Learning algorithm to HPC(High Performance Computing). 
+
+### Hagie Manufacturing (John Deere)
+- **Position:** Data Scientist Coop
+- **Dates:** January 2022 - January 2023
+- **Description:** 
+  - President award winner for extraordinary performance.
+  - Skills Used: Alteryx, Ignition SCADA, Databricks, PowerBI, Microsoft Excel,AWS, RabbitMQ, Python, OpenCV, Pytorch.   
+  - Using tools and techniques to perform Text Mining, ML models development for predictive analysis and automation and Computer Vision models. 
+  - Design and develop project pipeline(Data Exploration, Sampling, Feature Engineering, Model Building, Field Performance Evaluation).
+
+### Iowa State University
+- **Position:** Graduate Research Assistant
+- **Dates:** January 2019 - December 2021
+- **Description:** 
+  - Skills Used: CAN-Bus, Python, OpenCV, POE, Pytorch, ROS
+  - Developed real-time driver assist system for large farm-vehicles. Involved a system of 16 cameras, edge computing and image stitching to utilize the CAN protocols and integrate the mechanism to existing system.
+  - Real-time depth detection and analysis using stereo camera(s). Used stereo camera to develop algorithm that can perform real-time depth detection and calculate volume of objects from the drone.
+
+### Iowa State University
+- **Position:** Graduate Teaching Assistant
+- **Dates:** January 2017 - May 2019
+- **Description:** 
+  - COMS 1060 (Introduction to programming using HTML5, CSS, PHP, SQL, JQuery, JavaScript). Responsible for helping students understanding concepts, clearing their doubts and grading assignments.
+
+### EXL(Inductis) Services India Pvt. Ltd.
+- **Position:** Business Analyst
+- **Dates:** February 2016 - December 2016
+- **Description:** 
+  - Awarded Rising Star Award (1 of 6 awardees out of 37,000+ employees)
+  - Skills used: SAS, SQL, IBM-Netezza, DB2,Tableau, R, Python, Microsoft Excel. 
+  - Utilized applications like SAS to identify trends and relationships between different pieces of data, draw appropriate conclusions and translated analytical findings.
+  - Created and worked on various reporting frameworks (Microsoft Excel, Tableau) that involved customer segmentation and clustering exercises for customers
+
+## Skills
+
+- Languages and Tools: Python, Java, OpenCV, Pytorch,CUDA, Databricks, Ignition, Alteryx, AWS, Jenkins, IoT, Git, Unix 
+- Web Technologies: HTML, CSS, React, AngularJS, NodeJS.
+
+<!-- ## Projects -->
+
+<!-- ### Project 1 -->
+<!-- - **Description:** Brief description of the project. -->
+<!-- - **Technologies Used:** List of technologies used. -->
+<!-- - ... -->
+
+<!-- ### Project 2 -->
+<!-- - ... -->
+
+<!-- ## Certifications -->
+
+<!-- - Certification Name 1 -->
+<!-- - Certification Name 2 -->
+<!-- - ... -->
+
+## Awards/Grants
+
+### ACCESS grant supported by NSF (CIS220069)
+- **Description:** Develop algorithm for Unsupervised Object Detection.
+- **Position:** Co-PI.
+- **Grant Amount:** USD 174,000.
+
+## Professional Service
+
+### Invited Speaker
+- **Description:** International 7-in-1 Symposium, CGC, Herning, Denmark.
+
+### Reviewer
+- **Conference:** ECCV 2024.
+- **Conference:** ICML 2024.
+- **Conference:** ICLR 2024.
+- **Conference:** NeurIPS 2023.
+- **Journal:** Journal of AI Research (JAIR).
+- **Journal:** River Publishers.
+
+## Professional Memberships
+- IEEE
+- IEEE Computer Society
+- Cohere for AI
+
+## Attachments
+
+### Resume
+- **Description:** Click [here](CVChandan.pdf) to view my resume.
+- **embed:** CVChandan.pdf
