@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Chandan Kumar">
+<meta name="dcterms.date" content="2024-01-13">
+<meta name="description" content="A note on different loss functions.">
 
-<title>In the media – Chandan Kumar</title>
+<title>Notes on Results Metrics – Chandan Kumar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +26,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../assets/favicon.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-866063bb6a2e668286633e5ba949e1cc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-866063bb6a2e668286633e5ba949e1cc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,71 +71,24 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../assets/custom.css">
-<link rel="alternate" type="application/rss+xml" title="Chandan Kumar" href="index.xml" data-external="1"><meta property="og:title" content="In the media – Chandan Kumar">
-<meta property="og:image" content="https://chandankumar.ai/media/tech-for-good/header.jpeg">
+<link rel="stylesheet" href="../../assets/custom.css">
+<meta property="og:title" content="Notes on Results Metrics – Chandan Kumar">
+<meta property="og:description" content="A note on different loss functions.">
+<meta property="og:image" content="https://chandankumar.ai/posts/results_metrics/activation.jpeg">
 <meta property="og:site_name" content="Chandan Kumar">
+<meta name="citation_title" content="Notes on Results Metrics">
+<meta name="citation_author" content="Chandan Kumar">
+<meta name="citation_publication_date" content="2024-01-13">
+<meta name="citation_cover_date" content="2024-01-13">
+<meta name="citation_year" content="2024">
+<meta name="citation_online_date" content="2024-01-13">
+<meta name="citation_fulltext_html_url" content="https://chandankumar.ai/posts/results_metrics/">
+<meta name="citation_language" content="en-GB">
+<meta name="citation_reference" content="citation_title=Dual use of artificial-intelligence-powered drug discovery;,citation_author=Fabio Urbina;,citation_author=Filippa Lentzos;,citation_author=Cédric Invernizzi;,citation_author=Sean Ekins;,citation_publication_date=2022;,citation_cover_date=2022;,citation_year=2022;,citation_issue=3;,citation_volume=4;,citation_journal_title=Nature Machine Intelligence;,citation_publisher=Nature Publishing Group UK London;">
+<meta name="citation_reference" content="citation_title=Improving the human hazard characterization of chemicals: A Tox21 update;,citation_author=Raymond R Tice;,citation_author=Christopher P Austin;,citation_author=Robert J Kavlock;,citation_author=John R Bucher;,citation_publication_date=2013;,citation_cover_date=2013;,citation_year=2013;,citation_issue=7;,citation_volume=121;,citation_journal_title=Environmental health perspectives;,citation_publisher=National Institute of Environmental Health Sciences;">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -144,7 +98,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Chandan Kumar</span>
     </a>
   </div>
@@ -155,27 +109,27 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../papers/"> 
+    <a class="nav-link" href="../../papers/"> 
 <span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../cv/"> 
+    <a class="nav-link" href="../../cv/"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../posts/"> 
+    <a class="nav-link" href="../../posts/"> 
 <span class="menu-text">My Notes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../Teaching/"> 
+    <a class="nav-link" href="../../Teaching/"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../My_Lab/"> 
+    <a class="nav-link" href="../../My_Lab/"> 
 <span class="menu-text">VAI</span></a>
   </li>  
 </ul>
@@ -202,21 +156,51 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="RXVyb25ld3M=">Euronews <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RnJhbmtmdXJ0ZXIlMjBSdW5kc2NoYXU=">Frankfurter Rundschau <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VGVjaCUyMGZvciUyMEdvb2Q=">Tech for Good <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#why-different-result-metrics" id="toc-why-different-result-metrics" class="nav-link" data-scroll-target="#why-different-result-metrics">Why different result metrics</a></li>
+  <li><a href="#types-of-metrics" id="toc-types-of-metrics" class="nav-link" data-scroll-target="#types-of-metrics">Types of Metrics</a></li>
+  <li><a href="#thoughts" id="toc-thoughts" class="nav-link" data-scroll-target="#thoughts">Thoughts:</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">In the media</h1>
-</div>
+<h1 class="title">Notes on Results Metrics</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">AI</div>
+    <div class="quarto-category">Results Metrics</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    <p>A note on different loss functions.</p>
+  </div>
+</div>
 
 
 <div class="quarto-title-meta column-page-left">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Chandan Kumar <a href="mailto:chandan1002@gmail.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0003-0138-5312" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">13 January 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -226,105 +210,42 @@ window.Quarto = {
 </header>
 
 
+<!-- In a recent paper that has attracted the interest of popular media as well, Fabio Urbina and colleagues examined the use (or rather, the abuse) of computational chemistry models of toxicity for generating toxic compounds and potential chemical agent candidates.[@urbina2022dual] Urbina and colleagues conclude that -->
+<!-- > By going as close as we dared, we have still crossed a grey moral boundary, demonstrating that it is possible to design virtual potential toxic molecules without much in the way of effort, time or computational resources. -->
+<p>Results</p>
+<section id="background" class="level1">
+<h1>Background</h1>
+</section>
+<section id="why-different-result-metrics" class="level1">
+<h1>Why different result metrics</h1>
+<p>The purpose of loss function is to quantify the error between the output of an algorithm and the given target value.</p>
+<blockquote class="blockquote">
+<p>Let’s say that I have 100 pieces of something and I want the algorithm to predict the number of pieces available. Here, 100 pieces are the ground truth or the target value. Now, if the algorithm predicts that there are only 90 pieces, there is a loss or error of 10 pieces.</p>
+</blockquote>
+</section>
+<section id="types-of-metrics" class="level1">
+<h1>Types of Metrics</h1>
+<ul>
+<li>Precision : Accuracy of positive prediction of all items classified as positive, how many were actually positive True Positive/ (True Positive + False Positive)</li>
+<li>Recall : Sensitivity or True Positive Rate. Of all the actual positive instances, how many were correctly identified by the model True Positive/ (True Positive + False Negative)</li>
+</ul>
+</section>
+<section id="thoughts" class="level1">
+<h1>Thoughts:</h1>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="VGVjaCUyMGZvciUyMEdvb2Q=" data-listing-date-sort="1678168800000" data-listing-file-modified-sort="1702725867000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="45">
-<div class="thumbnail"><a href="../media/tech-for-good/index.html" class="no-external">
-
-<img loading="lazy" src="../media/tech-for-good/header.jpeg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../media/tech-for-good/index.html" class="no-external">Tech for Good podcast</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('VGVjaCUyMGZvciUyMEdvb2Q='); return false;">Tech for Good</div>
-
-</div>
-<div class="delink listing-description"><a href="../media/tech-for-good/index.html" class="no-external">
-<p>A fascinating interview with Ben Mouncer on the Tech for Good podcast.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../media/tech-for-good/index.html" class="no-external">
-<div class="listing-date">
-Mar 7, 2023
-</div>
-<div class="listing-author">
-Chris von Csefalvay
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="RnJhbmtmdXJ0ZXIlMjBSdW5kc2NoYXU=" data-listing-date-sort="1589173200000" data-listing-file-modified-sort="1702725867000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="200">
-<div class="thumbnail"><a href="../media/fr-disinfectants/index.html" class="no-external">
-
-<img loading="lazy" src="../media/fr-disinfectants/header.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../media/fr-disinfectants/index.html" class="no-external">Corona in den USA: Mediziner warnen nun vor Injektion von Desinfektionsmittel</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RnJhbmtmdXJ0ZXIlMjBSdW5kc2NoYXU='); return false;">Frankfurter Rundschau</div>
-
-</div>
-<div class="delink listing-description"><a href="../media/fr-disinfectants/index.html" class="no-external">
-<p>Injecting disinfectants continues to be a bad idea.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../media/fr-disinfectants/index.html" class="no-external">
-<div class="listing-date">
-May 11, 2020
-</div>
-<div class="listing-author">
-Chris von Csefalvay
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="RXVyb25ld3M=" data-listing-date-sort="1587099600000" data-listing-file-modified-sort="1702725867000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="146">
-<div class="thumbnail"><a href="../media/euronews-covid/index.html" class="no-external">
-
-<img loading="lazy" src="../media/euronews-covid/header.webp" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../media/euronews-covid/index.html" class="no-external">Koronavírus: az USA-ban már használják, itthon még nem kellett a magyar cég adatelemző programja</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RXVyb25ld3M='); return false;">Euronews</div>
-
-</div>
-<div class="delink listing-description"><a href="../media/euronews-covid/index.html" class="no-external">
-<p>Commenting on our work on the COVID-19 data set and the relevance of data in a pandemic.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../media/euronews-covid/index.html" class="no-external">
-<div class="listing-date">
-Apr 17, 2020
-</div>
-<div class="listing-author">
-Chris von Csefalvay
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{kumar2024,
+  author = {{Chandan Kumar}},
+  title = {Notes on {Results} {Metrics}},
+  date = {2024-01-13},
+  url = {https://chandankumar.ai/posts/results_metrics/},
+  langid = {en-GB}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-kumar2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+Chandan Kumar. 2024. <span>“Notes on Results Metrics.”</span> <a href="https://chandankumar.ai/posts/results_metrics/">https://chandankumar.ai/posts/results_metrics/</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -748,5 +669,5 @@ Chris von Csefalvay
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
