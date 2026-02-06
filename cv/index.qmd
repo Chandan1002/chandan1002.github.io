@@ -14,7 +14,7 @@ css: cv.css
 
   📧 kumar@alfred.edu  
   📞   
-  🌐 [www.waryscientist.com](http://www. waryscientist.com)  
+  🌐 [Website](https://waryscientist.com/)  
   🎓 [Google Scholar](https://scholar.google.com/citations?hl=en&user=que-rRAAAAAJ&view_op=list_works)  
   💻 [GitHub](https://github.com/Chandan1002)  
   🔗 [LinkedIn](https://www.linkedin.com/in/chandan1002) ·  
