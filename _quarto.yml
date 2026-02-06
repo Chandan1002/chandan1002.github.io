@@ -1,6 +1,8 @@
+
+
 project:
   type: website
-  output-dir: .
+  output-dir: _site
   pre-render:
     - scripts/pre_create_papers_file.py
    # - scripts/pre_check_skierg_records.py
@@ -10,45 +12,93 @@ python:
   path: "/Users/ck/.virtualenvs/r-reticulate/bin/python"
 resources:
   - CNAME
+  - assests
 
 website:
   title: "Chandan Kumar"
-  description: "Chandan Kumar is a computational scientist/data scientist working at the intersection of AI, Deep Learning and Computer Vision."
+  site-url: "https://chandankumar.ai"   # ← add your real domain
+  description: "Dr. Chandan Kumar is currently working as an Assistant Professor in Computer Science Department  at Alfred University, New York. "
+  favicon: assets/favicon.png       # optional but recommended
   navbar:
+    background: light
+    pinned: true
+    search: true
+
     left:
       - href: index.qmd
         text: Home
-      - href: papers
+
+      - href: papers/
         text: Papers
       # - href: teaching
       #   text: Teaching
-      - href: cv
+      - href: cv/
         text: CV
       # - href: media
       #   text: Media
-      - href: posts
+      - href: posts/
         text: My Notes
+
+      - href: Teaching/
+        text: Teaching  
+
+      - href: My_Lab/
+        text: VAI
+
+    right:
+      - icon: github
+        href: https://github.com/yourusername
+        aria-label: GitHub
+
+      - icon: google-scholar
+        href: https://scholar.google.com/citations?user=XXXX
+        aria-label: Google Scholar    
       #- href: cv_test
       #  text: test
       # - href: https://computationalinfectiousdisease.com
       #   text: My book
+
   page-footer:
-    left: "(c) Chandan Kumar, 2023–. [Disclaimer](disclaimer)"
-  twitter-card: true
+    left: |
+        © Chandan Kumar, 2026– ·
+         [Disclaimer](disclaimer).
+         [Privacy](privacy)
+
+    right: |
+      Built with [Quarto](https://quarto.org)
+  #twitter-card: true
   open-graph: true
   google-analytics: ""
 
 format:
   html:
     theme: default
+    format:
+  #html:
+    css: assets/custom.css
+
       #- cosmo
      # - custom.scss
+    page-layout: full 
     toc: true
     toc_depth: 3
-    toc_float: true
-    toc_smooth_scroll: true
-    toc_highlight: true
+    toc-location: right
+    smooth-scroll: true
+    link-external-newwindow: true
     fig-align: center
+    code-copy: true
+    code-overflow: wrap
+    # toc_float: true
+    # toc_smooth_scroll: true
+    # toc_highlight: true
+    # fig-align: center
+
+    
+
+execute:
+  freeze: auto    
+
+
 
 
 

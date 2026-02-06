@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Chandan Kumar</title>
+<link>https://chandankumar.ai/posts/</link>
+<atom:link href="https://chandankumar.ai/posts/index.xml" rel="self" type="application/rss+xml"/>
+<description>Dr. Chandan Kumar is currently working as an Assistant Professor in Computer Science Department  at Alfred University, New York. </description>
+<generator>quarto-1.8.27</generator>
+<lastBuildDate>Sat, 13 Jan 2024 06:00:00 GMT</lastBuildDate>
+<item>
+  <title>Notes on Loss Functions</title>
+  <dc:creator>Chandan Kumar</dc:creator>
+  <link>https://chandankumar.ai/posts/loss-functions/</link>
+  <description><![CDATA[ 
+
+
+
+
+<!-- In a recent paper that has attracted the interest of popular media as well, Fabio Urbina and colleagues examined the use (or rather, the abuse) of computational chemistry models of toxicity for generating toxic compounds and potential chemical agent candidates.[@urbina2022dual] Urbina and colleagues conclude that -->
+<!-- > By going as close as we dared, we have still crossed a grey moral boundary, demonstrating that it is possible to design virtual potential toxic molecules without much in the way of effort, time or computational resources. -->
+<p>Loss Function or Cost Function or Error Function</p>
+<section id="background" class="level1">
+<h1>Background</h1>
+</section>
+<section id="why-loss-function" class="level1">
+<h1>Why Loss function</h1>
+<p>The purpose of loss function is to quantify the error between the output of an algorithm and the given target value.</p>
+<blockquote class="blockquote">
+<p>Let’s say that I have 100 pieces of something and I want the algorithm to predict the number of pieces available. Here, 100 pieces are the ground truth or the target value. Now, if the algorithm predicts that there are only 90 pieces, there is a loss or error of 10 pieces.</p>
+</blockquote>
+</section>
+<section id="types-of-loss-functions" class="level1">
+<h1>Types of Loss Functions</h1>
+<ul>
+<li>NCE</li>
+<li>InfoNCE</li>
+<li>NT-Xent</li>
+<li>Contrastive Loss</li>
+<li>Triplet Loss</li>
+</ul>
+<p>InfoNCE (Information Noise Contrastive Estimation) loss uses positive examples and sampled negative examples to contrast a true data distribution with a noise distribution. InfoNCE uses categorical cross-entropy loss to identify the positive sample amongst a set of unrelated noise samples. InfoNCE is an extension of NCE loss that adds a concept of mutual information to the loss calculation. Mutual information measures the amount of information shared between two random variables. InfoNCE loss aims to maximize the mutual information between the representations of the true target and its context while minimizing the mutual info between the representations of the true target and the noise samples.</p>
+<p>NT-XENT (Normalized Temperature scaled Cross entropy) loss is a variant of InfoNCE loss that introduces a temperature parameter to control the smoothness of the similarity distribution, which can help with training stability and convergence. The higher temperature (Tau) encourages a softer distribution, making it easier for the model to distinguish between positive and negative sample.</p>
+</section>
+<section id="thoughts" class="level1">
+<h1>Thoughts:</h1>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{kumar2024,
+  author = {{Chandan Kumar}},
+  title = {Notes on {Loss} {Functions}},
+  date = {2024-01-13},
+  url = {https://chandankumar.ai/posts/loss-functions/},
+  langid = {en-GB}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-kumar2024" class="csl-entry quarto-appendix-citeas">
+Chandan Kumar. 2024. <span>“Notes on Loss Functions.”</span> <a href="https://chandankumar.ai/posts/loss-functions/">https://chandankumar.ai/posts/loss-functions/</a>.
+</div></div></section></div> ]]></description>
+  <category>AI</category>
+  <category>Loss Functions</category>
+  <guid>https://chandankumar.ai/posts/loss-functions/</guid>
+  <pubDate>Sat, 13 Jan 2024 06:00:00 GMT</pubDate>
+  <media:content url="https://chandankumar.ai/posts/loss-functions/activation.jpeg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Notes on Results Metrics</title>
+  <dc:creator>Chandan Kumar</dc:creator>
+  <link>https://chandankumar.ai/posts/results_metrics/</link>
+  <description><![CDATA[ 
+
+
+
+
+<!-- In a recent paper that has attracted the interest of popular media as well, Fabio Urbina and colleagues examined the use (or rather, the abuse) of computational chemistry models of toxicity for generating toxic compounds and potential chemical agent candidates.[@urbina2022dual] Urbina and colleagues conclude that -->
+<!-- > By going as close as we dared, we have still crossed a grey moral boundary, demonstrating that it is possible to design virtual potential toxic molecules without much in the way of effort, time or computational resources. -->
+<p>Results</p>
+<section id="background" class="level1">
+<h1>Background</h1>
+</section>
+<section id="why-different-result-metrics" class="level1">
+<h1>Why different result metrics</h1>
+<p>The purpose of loss function is to quantify the error between the output of an algorithm and the given target value.</p>
+<blockquote class="blockquote">
+<p>Let’s say that I have 100 pieces of something and I want the algorithm to predict the number of pieces available. Here, 100 pieces are the ground truth or the target value. Now, if the algorithm predicts that there are only 90 pieces, there is a loss or error of 10 pieces.</p>
+</blockquote>
+</section>
+<section id="types-of-metrics" class="level1">
+<h1>Types of Metrics</h1>
+<ul>
+<li>Precision : Accuracy of positive prediction of all items classified as positive, how many were actually positive True Positive/ (True Positive + False Positive)</li>
+<li>Recall : Sensitivity or True Positive Rate. Of all the actual positive instances, how many were correctly identified by the model True Positive/ (True Positive + False Negative)</li>
+</ul>
+</section>
+<section id="thoughts" class="level1">
+<h1>Thoughts:</h1>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{kumar2024,
+  author = {{Chandan Kumar}},
+  title = {Notes on {Results} {Metrics}},
+  date = {2024-01-13},
+  url = {https://chandankumar.ai/posts/results_metrics/},
+  langid = {en-GB}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-kumar2024" class="csl-entry quarto-appendix-citeas">
+Chandan Kumar. 2024. <span>“Notes on Results Metrics.”</span> <a href="https://chandankumar.ai/posts/results_metrics/">https://chandankumar.ai/posts/results_metrics/</a>.
+</div></div></section></div> ]]></description>
+  <category>AI</category>
+  <category>Results Metrics</category>
+  <guid>https://chandankumar.ai/posts/results_metrics/</guid>
+  <pubDate>Sat, 13 Jan 2024 06:00:00 GMT</pubDate>
+  <media:content url="https://chandankumar.ai/posts/results_metrics/activation.jpeg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Very Random Notes</title>
+  <dc:creator>Chandan Kumar</dc:creator>
+  <link>https://chandankumar.ai/posts/random-notes/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="ham-sandwich-theorem" class="level2">
+<h2 class="anchored" data-anchor-id="ham-sandwich-theorem">Ham Sandwich Theorem</h2>
+<p>My Understanding: Let’s assume we have 5 objects. No matter how we arrange these 5 objects in whatever orientation, there will always exist a plane that can cut through all these 5 objects in exact halves.</p>
+</section>
+<section id="bayes-theorem" class="level2">
+<h2 class="anchored" data-anchor-id="bayes-theorem">Bayes’ Theorem</h2>
+<p>Bayes Theorem is a mathematical formula to determine conditional probability.</p>
+<p>Bayes theorem relies on prior probability to generate posterior probability.</p>
+<!-- It's not every day that you find out you have climbed the exalted heights of another discipline. My work is pretty interdisciplinary, but it shocked me, too, that I'm apparently holding forth on neoliberalism and the epistemic question in African universities ([archive link](https://archive.is/MgSAW)): -->
+<!-- ![Apparently, I'm commenting on neoliberalism in African universities.](scispace.png){#fig-scispace} -->
+<!-- This, of course, came at some surprise to me, as I have never written anything on the topic. I have, however, written a lot about AI, and I have written a thing or two about Africa, so I guess it was only a matter of time before I was conflated with someone else. This time, the unwitting victim deprived of his credit was [Prof. Amasa P. Ndofirepi](https://www.uj.ac.za/members/prof-amasa-philip-ndofirepi/), who is an educational studies scholar at the University of Johannesburg. I have no idea how I ended up being credited with his work, but I'm sure it was an honest mistake. -->
+<!-- The problem is, with AI, mistakes compound. So if an unwitting student were to ask for a quick literature review of neoliberalism on the subject, they might get something like this from Scispace: -->
+<!-- > The literature on the impact of neoliberalism on knowledge production and dissemination in African universities has been extensively explored by various authors. Qosimova Gulbahor, in her paper "Placing Knowledge at the Centre of an Alternative Public Good Imaginary of African Universities," discusses the alternative public good mission of African universities and the need for them to apply their knowledge infrastructure to community development challenges. Chris von Csefalvay, in his paper "The Hegemonic Neoliberal Knowledges in the African University," examines the pervasive presence of neoliberalism in African universities and explores the prospects and opportunities to unyoke the trapped knowledge processes. These authors, along with others, highlight concerns about the dominance of Western knowledge, the commodification of knowledge, and the need for African universities to prioritize socially-just knowledges that serve African priorities and challenges. -->
+<!-- I mean, that's flattering, but I'd really rather be credited mostly for my own work. I'm sure Prof. Ndofirepi would agree. -->
+<!-- ## Why I care -->
+<!-- This is, of course, not good for academia. We've generally been coasting from one crisis to another. We've got a replication crisis, there's [enough dodgy Western Blots to blot out the sun](https://retractionwatch.com/2020/09/30/author-says-misguided-efforts-for-the-ideal-western-blot-led-to-the-withdrawal-of-these-studies/), we've got the [Tessier-Lavigne mess](https://www.statnews.com/2023/07/19/marc-tessier-lavigne-stanford-president-resignation/), and that's just what I can think of off the top of my head before my first coffee. A predatory publishing industry doesn't help this at all. We need another crisis on top of this like we need a hole in the head, and yet, here we are. -->
+<!-- Now, as far as I'm aware, no serious academic is actually using these tools to do their research. On the other hand, non-academics _are_. For journalists, in particular, such tools are a godsend -- literature reviews are annoying, and if you can get a computer to do it for you, why not? The problem is, of course, that you're supposed to double-check this stuff and, well, journalists are known for many things, but double-checking stuff properly isn't really one of them. -->
+<!-- And so, after months of academics fretting about ChatGPT eating their lunch, we're confronted with the actual problem. AI is not better at producing decent science, but it is vastly faster and more efficient at producing _bad_ science. -->
+<!-- Which we weren't short on to begin with. -->
+<!-- ## What's the problem? -->
+<!-- Language is a tool that works on the basis of some conventions of meaning. Language models encapsulate these conventions, but they cannot encapsulate _all_ of them -- there are compromises to be made if a system with limited resources has to contend with nearly unlimited human imagination. When language models' limits come to blows with domain-specific language, we get into trouble. -->
+<!-- Language models are really weak at one thing: reasoned judgment. As a scientist, you are trained to exercise this kind of reasoned judgment in determining what is, and what isn't, worth considering as an authority. That's why we make our master's students (and hopefully most undergraduates) write literature reviews until the cows come home. It teaches them to develop that judgment, and also to know how to explore the fringes of their research question. I have looked at a few 'academic AI' tools that claim to be doing some of this, and they're not very good at it. [Scite](https://scite.ai) is so far one of the better ones, and the literature reviews it produces are still pretty bad: results are heavily weighted towards recent publications, towards the specific in preference to the foundational and often towards meandering misinterpretations of the research question as long as sources for that could be found, in preference to actually identifying a gap. -->
+<!-- To be quite fair towards these models, they have to deal with academic literature, which is an abundance of noise with a flicker of signal. There is, not to put too fine a point on it, a ton of crap out there, and it's not always easy to tell the difference between the crap and the good stuff. That's why we have peer review, and that's why we have literature reviews. The problem is, of course, that these models are not trained on the literature, but on the internet. And the internet is a very different place from the academic literature indeed. -->
+<!-- Academic writing, especially domain specific writing, has a language of its own. It's not fair to expect a language model trained on English to also master uses of English that might as well be a different language. To give a favourite example of mine: in magnetic resonance imaging of the brain, there's often talk of something called 'flow voids'. Now, normal human reasoning would interpret a 'flow void' to be the absence of flow, or something along those lines. In MRI, a flow void is actually the opposite: it is a 'void' of signal created in a vessel through which something (usually blood, sometimes CSF) flows.^[Flow voids happen in the context of spin-echo imaging. These modalities involve two pulses – an excitation pulse and a refocusing pulse. Blood that moves perpendicular to the image plane will be hit by the excitation pulse but not the refocusing pulse. Therefore, it will not create a signal, which gives us the 'void' appearance of signal hypointense vessels.] This is a very specific term that has a very specific meaning in a very specific context. A language model, however, would not know that. It would assume that a 'flow void' is (de)void of flow. -->
+<!-- Just about _all_ of science is like that. We have a language of our own, and it's not always easy to understand. What definitely doesn't make it easier to work with, however, is when the source material is also wrong. Which is what we're dealing with all too often, viz. @fig-scispace. -->
+<!-- ## What can we do about it? -->
+<!-- Most 'academic AI' applications are riding on the crest of a wave of high expectations that surround everything AI-related right now. They offer to be useful aides-de-camp to beleaguered academics who have to contend with exponentially growing literature, but in reality fall far short of that promise. And the inherent 'black box' nature of such models means that it's not always easy to tell when they're wrong. -->
+<!-- At this point, perhaps the best we can do is to hold off on using generative AI tools for academic research until they're better. We're not there yet. We're not even close. For highly domain specific applications, retrieval-augmented generation (RAG) approaches utilising a curated knowledge base of publications in that realm has proven to be a very useful approach indeed, but those are specialised tools that are at the present primarily in the purview of private industry. I've seen some great applications in this field, and I see this as another proof point for [my assertion that the future belongs to ecosystems of small, specialised language models rather than one big model that does everything](../team-of-rivals/). -->
+<!-- For the time being, we're going to have to do things the old-fashioned way: reading the literature and writing our own reviews. I know, it's not very fun. But it's the only way to do it right, and we've managed with that for the last few hundred years. Giving it another few years won't hurt. -->
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{kumar2024,
+  author = {{Chandan Kumar}},
+  title = {Very {Random} {Notes}},
+  date = {2024-01-06},
+  url = {https://chandankumar.ai/posts/random-notes/},
+  langid = {en-GB}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-kumar2024" class="csl-entry quarto-appendix-citeas">
+Chandan Kumar. 2024. <span>“Very Random Notes.”</span> <a href="https://chandankumar.ai/posts/random-notes/">https://chandankumar.ai/posts/random-notes/</a>.
+</div></div></section></div> ]]></description>
+  <category>AI</category>
+  <category>Statistics</category>
+  <category>writing</category>
+  <guid>https://chandankumar.ai/posts/random-notes/</guid>
+  <pubDate>Sat, 06 Jan 2024 06:00:00 GMT</pubDate>
+  <media:content url="https://chandankumar.ai/posts/random-notes/Statistics.jpeg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Statistics in AI</title>
+  <dc:creator>Chandan Kumar</dc:creator>
+  <link>https://chandankumar.ai/posts/statistics-notes/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="chi-square-test" class="level2">
+<h2 class="anchored" data-anchor-id="chi-square-test">Chi-Square Test</h2>
+<p>It is a statistical method that compares how the model compares against actual observed data.</p>
+</section>
+<section id="bayes-theorem" class="level2">
+<h2 class="anchored" data-anchor-id="bayes-theorem">Bayes’ Theorem</h2>
+<p>Bayes Theorem is a mathematical formula to determine conditional probability.</p>
+<p>Bayes theorem relies on prior probability to generate posterior probability.</p>
+</section>
+<section id="correlation" class="level2">
+<h2 class="anchored" data-anchor-id="correlation">Correlation</h2>
+<p>It is a statistical measure that describes the degree to which two variables change together. Correlation coefficient such as Pearson’s correlation coefficient ranges from -1 to 1. 1 =&gt; Perfect positive correlation. This implies that if one variable increases then the other variable also increases proportionally. -1 =&gt; Perfect negative correlation. This implies that if one variable increases then the other variable also decreases proportionally. 0 =&gt; No linear correlation between variables.</p>
+<p>Correlation does not imply causation.</p>
+<!-- It's not every day that you find out you have climbed the exalted heights of another discipline. My work is pretty interdisciplinary, but it shocked me, too, that I'm apparently holding forth on neoliberalism and the epistemic question in African universities ([archive link](https://archive.is/MgSAW)): -->
+<!-- ![Apparently, I'm commenting on neoliberalism in African universities.](scispace.png){#fig-scispace} -->
+<!-- This, of course, came at some surprise to me, as I have never written anything on the topic. I have, however, written a lot about AI, and I have written a thing or two about Africa, so I guess it was only a matter of time before I was conflated with someone else. This time, the unwitting victim deprived of his credit was [Prof. Amasa P. Ndofirepi](https://www.uj.ac.za/members/prof-amasa-philip-ndofirepi/), who is an educational studies scholar at the University of Johannesburg. I have no idea how I ended up being credited with his work, but I'm sure it was an honest mistake. -->
+<!-- The problem is, with AI, mistakes compound. So if an unwitting student were to ask for a quick literature review of neoliberalism on the subject, they might get something like this from Scispace: -->
+<!-- > The literature on the impact of neoliberalism on knowledge production and dissemination in African universities has been extensively explored by various authors. Qosimova Gulbahor, in her paper "Placing Knowledge at the Centre of an Alternative Public Good Imaginary of African Universities," discusses the alternative public good mission of African universities and the need for them to apply their knowledge infrastructure to community development challenges. Chris von Csefalvay, in his paper "The Hegemonic Neoliberal Knowledges in the African University," examines the pervasive presence of neoliberalism in African universities and explores the prospects and opportunities to unyoke the trapped knowledge processes. These authors, along with others, highlight concerns about the dominance of Western knowledge, the commodification of knowledge, and the need for African universities to prioritize socially-just knowledges that serve African priorities and challenges. -->
+<!-- I mean, that's flattering, but I'd really rather be credited mostly for my own work. I'm sure Prof. Ndofirepi would agree. -->
+<!-- ## Why I care -->
+<!-- This is, of course, not good for academia. We've generally been coasting from one crisis to another. We've got a replication crisis, there's [enough dodgy Western Blots to blot out the sun](https://retractionwatch.com/2020/09/30/author-says-misguided-efforts-for-the-ideal-western-blot-led-to-the-withdrawal-of-these-studies/), we've got the [Tessier-Lavigne mess](https://www.statnews.com/2023/07/19/marc-tessier-lavigne-stanford-president-resignation/), and that's just what I can think of off the top of my head before my first coffee. A predatory publishing industry doesn't help this at all. We need another crisis on top of this like we need a hole in the head, and yet, here we are. -->
+<!-- Now, as far as I'm aware, no serious academic is actually using these tools to do their research. On the other hand, non-academics _are_. For journalists, in particular, such tools are a godsend -- literature reviews are annoying, and if you can get a computer to do it for you, why not? The problem is, of course, that you're supposed to double-check this stuff and, well, journalists are known for many things, but double-checking stuff properly isn't really one of them. -->
+<!-- And so, after months of academics fretting about ChatGPT eating their lunch, we're confronted with the actual problem. AI is not better at producing decent science, but it is vastly faster and more efficient at producing _bad_ science. -->
+<!-- Which we weren't short on to begin with. -->
+<!-- ## What's the problem? -->
+<!-- Language is a tool that works on the basis of some conventions of meaning. Language models encapsulate these conventions, but they cannot encapsulate _all_ of them -- there are compromises to be made if a system with limited resources has to contend with nearly unlimited human imagination. When language models' limits come to blows with domain-specific language, we get into trouble. -->
+<!-- Language models are really weak at one thing: reasoned judgment. As a scientist, you are trained to exercise this kind of reasoned judgment in determining what is, and what isn't, worth considering as an authority. That's why we make our master's students (and hopefully most undergraduates) write literature reviews until the cows come home. It teaches them to develop that judgment, and also to know how to explore the fringes of their research question. I have looked at a few 'academic AI' tools that claim to be doing some of this, and they're not very good at it. [Scite](https://scite.ai) is so far one of the better ones, and the literature reviews it produces are still pretty bad: results are heavily weighted towards recent publications, towards the specific in preference to the foundational and often towards meandering misinterpretations of the research question as long as sources for that could be found, in preference to actually identifying a gap. -->
+<!-- To be quite fair towards these models, they have to deal with academic literature, which is an abundance of noise with a flicker of signal. There is, not to put too fine a point on it, a ton of crap out there, and it's not always easy to tell the difference between the crap and the good stuff. That's why we have peer review, and that's why we have literature reviews. The problem is, of course, that these models are not trained on the literature, but on the internet. And the internet is a very different place from the academic literature indeed. -->
+<!-- Academic writing, especially domain specific writing, has a language of its own. It's not fair to expect a language model trained on English to also master uses of English that might as well be a different language. To give a favourite example of mine: in magnetic resonance imaging of the brain, there's often talk of something called 'flow voids'. Now, normal human reasoning would interpret a 'flow void' to be the absence of flow, or something along those lines. In MRI, a flow void is actually the opposite: it is a 'void' of signal created in a vessel through which something (usually blood, sometimes CSF) flows.^[Flow voids happen in the context of spin-echo imaging. These modalities involve two pulses – an excitation pulse and a refocusing pulse. Blood that moves perpendicular to the image plane will be hit by the excitation pulse but not the refocusing pulse. Therefore, it will not create a signal, which gives us the 'void' appearance of signal hypointense vessels.] This is a very specific term that has a very specific meaning in a very specific context. A language model, however, would not know that. It would assume that a 'flow void' is (de)void of flow. -->
+<!-- Just about _all_ of science is like that. We have a language of our own, and it's not always easy to understand. What definitely doesn't make it easier to work with, however, is when the source material is also wrong. Which is what we're dealing with all too often, viz. @fig-scispace. -->
+<!-- ## What can we do about it? -->
+<!-- Most 'academic AI' applications are riding on the crest of a wave of high expectations that surround everything AI-related right now. They offer to be useful aides-de-camp to beleaguered academics who have to contend with exponentially growing literature, but in reality fall far short of that promise. And the inherent 'black box' nature of such models means that it's not always easy to tell when they're wrong. -->
+<!-- At this point, perhaps the best we can do is to hold off on using generative AI tools for academic research until they're better. We're not there yet. We're not even close. For highly domain specific applications, retrieval-augmented generation (RAG) approaches utilising a curated knowledge base of publications in that realm has proven to be a very useful approach indeed, but those are specialised tools that are at the present primarily in the purview of private industry. I've seen some great applications in this field, and I see this as another proof point for [my assertion that the future belongs to ecosystems of small, specialised language models rather than one big model that does everything](../team-of-rivals/). -->
+<!-- For the time being, we're going to have to do things the old-fashioned way: reading the literature and writing our own reviews. I know, it's not very fun. But it's the only way to do it right, and we've managed with that for the last few hundred years. Giving it another few years won't hurt. -->
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{kumar2024,
+  author = {{Chandan Kumar}},
+  title = {Statistics in {AI}},
+  date = {2024-01-06},
+  url = {https://chandankumar.ai/posts/statistics-notes/},
+  langid = {en-GB}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-kumar2024" class="csl-entry quarto-appendix-citeas">
+Chandan Kumar. 2024. <span>“Statistics in AI.”</span> <a href="https://chandankumar.ai/posts/statistics-notes/">https://chandankumar.ai/posts/statistics-notes/</a>.
+</div></div></section></div> ]]></description>
+  <category>AI</category>
+  <category>Statistics</category>
+  <category>writing</category>
+  <guid>https://chandankumar.ai/posts/statistics-notes/</guid>
+  <pubDate>Sat, 06 Jan 2024 06:00:00 GMT</pubDate>
+  <media:content url="https://chandankumar.ai/posts/statistics-notes/Statistics.jpeg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Notes on Activation Functions</title>
+  <dc:creator>Chandan Kumar</dc:creator>
+  <link>https://chandankumar.ai/posts/notes-on-activation-functions/</link>
+  <description><![CDATA[ 
+
+
+
+
+<!-- In a recent paper that has attracted the interest of popular media as well, Fabio Urbina and colleagues examined the use (or rather, the abuse) of computational chemistry models of toxicity for generating toxic compounds and potential chemical agent candidates.[@urbina2022dual] Urbina and colleagues conclude that -->
+<!-- > By going as close as we dared, we have still crossed a grey moral boundary, demonstrating that it is possible to design virtual potential toxic molecules without much in the way of effort, time or computational resources. -->
+<p>Activation functions are very widely used in neural networks. Activation function is a function that calculates the output of the node. Why is it named activation function? It decides whether the neuron should be activated or not. It calculates the weighted sum and further adds bias to the neuron. They are also known as Transfer Function. Why? It transforms the summed weighted input from the node into an output value to be transferred to the next hidden layer or as output.</p>
+<section id="background" class="level1">
+<h1>Background</h1>
+<!-- Computational chemistry is the branch of computational science that focuses on applications in the chemical field. This includes pharmacology and rational drug design (RDD) in particular. The purpose of RDD is to generate drug candidates that show favourable indicators of effectiveness (such as high binding affinity to a target protein) along with indicators of biological suitability (such as no or low interference with other proteins, low toxicity and no inhibition of metabolic ‘bottlenecks’ like CYP3A4). The latter part is typically handled by a toxicity model. -->
+<!-- Rather simply put, a toxicity model infers the structural associations (the chemical structures associated with undesirable effects) from a library of known compounds with known effects. For instance, the Toxicology in the 21st Century (Tox21) programme of the US federal government has performed over sixty different assays (typically, enzyme inhibition assays) for over 13,000 different compounds. [@tice2013improving] Using molecular fingerprinting, which we have discussed in a previous post on this blog in this very same context, it is possible to build relatively easy models for toxicity. Where a particular desired toxicity is known, say mitochondrial toxicity, it’s not difficult to build a pipeline that generates candidate compounds, derives the molecular fingerprint and evaluates the likelihood that the molecule that is obtained will be an effective agent. In this sense, I wholeheartedly agree with Urbina: the cat is very much out of the bag. Even if Tox21’s public data does not include the classical target of modern chemical weapons (acetylcholinesterase), such data is not exactly hard to come by or, for a nation-state actor, to generate. A near-peer adversary could create such assays for cents on the compound. -->
+<!-- Nothing about the above is controversial. In fact, Urbina’s paper is an example of ‘trivial genius’: just about anyone who has ever done computational chemistry in the pharmacological/drug design space knows that any algorithm that is intended to optimise towards lower toxicity can be inverted to optimise towards higher toxicity, and the same models used to create effective enzyme inhibitors to treat cancer, depression, schizophrenia, allergies or autoimmune disease can be repurposed in a few hours and about $100 in AWS credits to something that will generate potent acetylcholinesterase inhibitors (AChEIs). Notably, this is not to say that all research aimed at acetylcholinesterase inhibition is aimed at creating a chemical warfare agent. AChEIs are used in a clinical context, e.g. for myasthenia gravis. They are, however, also the archetypal “nerve agent”. Which leads me to my second point of agreement with Urbina et al.: the tools of computational pharmacology and RDD are — and have been, for a long time! — open to misuse. -->
+</section>
+<section id="why-activation-function" class="level1">
+<h1>Why activation function</h1>
+<p>The purpose of activation function is to add non-linearity to the neural network.</p>
+</section>
+<section id="types-of-activation-functions" class="level1">
+<h1>Types of Activation Functions</h1>
+<p>Activation functions are broadly divided into two types:</p>
+<ol type="1">
+<li>Linear Activation Function</li>
+<li>Non-Linear Activation Function</li>
+</ol>
+<!-- On the other hand, the likelihood of an AI-generated chemical agent ever posing a threat beyond the theoretical is very, very low. There are a few reasons for that, and they’re inherent partly in computational chemistry, partly in weapons design. -->
+<!-- The computational chemistry part pertains to the fact that molecular fingerprinting and similar models only give us a narrow view of the outcomes we may expect. For starters, no model is able to reliably assess the feasibility and cost-effectiveness of synthesis. There are plenty of drug candidates that have performed admirably in vitro and sometimes even in clinical trials, but for which no feasible way of cost-efficient, large-scale synthesis could be found. Then, there are the drugs that ought to work, and might even work in vitro, but end up failing in clinical trials with no effect or an unexpected toxicity. Effect inference from chemical structure looks only at one side of the medal, and not even all of that. -->
+<!-- The bigger problem is the weapons design part. To avoid a late-night visit from some mild-mannered federal employees in a dark SUV, I’d like to point out that anything I discuss here is well in the public domain. With that said: just as pharmaceutical chemists want some things from their target compounds (such as relatively little inference, predictable metabolism, a wide therapeutic margin and few adverse effects), designers of chemical weapons have their own considerations for which to optimise. VX, for instance, is immensely popular because its oily consistency gives it beneficial physical properties. Similarly, a potential chemical weapon candidate must be stable vis-a-vis e.g. UV exposure, but not too stable. An example of the latter is the Red Zone in France, the World War I battlefields that have been bombarded with so many chemical weapons that to this day, they are heavily contaminated by arsenic, among others. The preference for binary agents (which contain two relatively stable and relatively non-toxic chemicals that are mixed, typically during the flight time of a shell, to form the active agent) means that a less toxic agent that can be reliably produced from the simple admixture of two relatively stable agents may be preferred to a more lethal unary agent. And this, of course, all assumes a state actor willing and able to violate international law on chemical weapons. -->
+<!-- Finally, there is no real need for novel chemical agents, at least not in the nerve agent category. Not only does using a known agent provide plausible deniability, there is also no real need to create anything more lethal than VX. Even relatively old chemical agents, such as mustard agents, are effective enough. A novel chemical structure may not guarantee that the agent escapes chemical detection, and functional antidotes are going to be just as effective against novel agents. To an atropine/pralidoxime NAAK autoinjector’s efficacy, it makes no difference whether the acetylcholinesterase inhibition comes from sarin, VX, Tetram or inadvertent exposure to organophosphate pesticides. Arguably, this becomes somewhat more complex with other agents, where the biological targets — and hence the antidotes — are more specific. Nevertheless, it is hard to conceive of anyone possessed of a burning rationale to start creating novel chemical agents. -->
+</section>
+<section id="thoughts" class="level1">
+<h1>Thoughts:</h1>
+<!-- I commend the authors for discussing the moral aspects of this exercise. It is rather uncomfortable to write about the use of artificial intelligence to create tools whose predominant use would be to extinguish human lives (although, as noted, many of these compounds can, and often do, have a medicinal use). -->
+<!-- Where I cannot agree with the authors is the conclusion that this situation calls for regulation (be it self-regulation or imposed from above). -->
+<!-- > Although MegaSyn is a commercial product and thus we have control over who has access to it, going forward, we will implement restrictions or an API for any forward-facing models. A reporting structure or hotline to authorities, for use if there is a lapse or if we become aware of anyone working on developing toxic molecules for non-therapeutic uses, may also be valuable. Finally, universities should redouble their efforts toward the ethical training of science students and broaden the scope to other disciplines, and particularly to computing students, so that they are aware of the potential for misuse of AI from an early stage of their career, as well as understanding the potential for broader impact. -->
+<!-- This is all well and good, but — assuming that there were a realistic danger of people coming to grief from AI-generated chemical weapons — it solves a problem that the authors have failed to substantiate exists. The tools to do this have been around for a long time. For the reasons laid out in the previous section, there is no burning desire anywhere in the world right now, as far as I can see, to develop a successor to VX purely on a structural basis. Of course, a chemical agent that can be synthesised without relying on any OPCW listed substances, or which can have novel effects, or which can escape traditional methods of detection (GC/MS, typically), would be of interest to potential bad actors, but current models of computational chemistry do not help with that. Creating permutational or functional analogues of VX does not, realistically, put anyone a single step closer to the ability to carry out an atrocity using such reprehensible weapons. -->
+<!-- On the other hand, I am concerned about the moral aspects that derive from the consequences of Urbina et al.’s paper. Given that the overwhelming majority of users of computational chemistry and RDD do so for benign purposes, the public attention garnered by such articles may create a regulatory push that is not going to make anyone safer, but will impede scientific inquiry. Urbina et al. point out the reputational risk, and the risk of a single bad apple spoiling the lot — I am rather uncertain whether an attention-grabbing headline in The Verge, raising the spectre of the scary AI that generates tens of thousands of killer compounds in hours (virtually all of which are very likely to be practically useless), is doing our discipline any favours. -->
+<!-- The Scythian prince Anacharsis likened laws to cobwebs: strong enough to catch the weak, but too weak to impede the powerful. In that sense, a sufficiently determined adversary with the right tools — scientists, labs, an AWS account with a few hundred bucks of credit — will be able to subvert the art of creating chemistry to save lives and turn it into a way to destroy them. No amount of regulation, controlled APIs and lectures on the Hague Ethical Guidelines are going to be any impediment. To a near-peer adversary or even a well-funded non-state actor, the door has been open for rational chemical agent discovery (RCAD) for a very long time. If the past is anything to go by, it has not really yielded rich fruit. Pretty much the only new thing under the sun for chemical agents in recent decades was the (possible, theorised) use of binary agents on Kim Jong-nam — not exactly a result of assiduous, AI-driven research into novel agents, but rather the every-day fare of a paranoid, despotic regime driven by cruelty and ignorance. -->
+<!-- The only thing to fear, then, is fear itself. There is a justified concern in the AI community that while we do indeed need to discuss ethical use of artificial intelligence in the RDD domain, there is a time and a place for that. Sensationalism and alarmist headlines of poison-spewing machine learning models are great clickbait, but they do not benefit the discipline. Realism, not alarmism, is needed to tackle these issues. -->
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{kumar2024,
+  author = {{Chandan Kumar}},
+  title = {Notes on {Activation} {Functions}},
+  date = {2024-01-01},
+  url = {https://chandankumar.ai/posts/notes-on-activation-functions/},
+  langid = {en-GB}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-kumar2024" class="csl-entry quarto-appendix-citeas">
+Chandan Kumar. 2024. <span>“Notes on Activation Functions.”</span> <a href="https://chandankumar.ai/posts/notes-on-activation-functions/">https://chandankumar.ai/posts/notes-on-activation-functions/</a>.
+</div></div></section></div> ]]></description>
+  <category>AI</category>
+  <category>Activation Functions</category>
+  <guid>https://chandankumar.ai/posts/notes-on-activation-functions/</guid>
+  <pubDate>Mon, 01 Jan 2024 06:00:00 GMT</pubDate>
+  <media:content url="https://chandankumar.ai/posts/notes-on-activation-functions/activation.jpeg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>

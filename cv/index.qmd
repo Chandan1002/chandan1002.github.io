@@ -1,27 +1,26 @@
 ---
-title: "Chandan Kumar - Curriculum Vitae"
-date: "`r format(Sys.Date(), '%Y-%m-%d')`"
+title: ""
 format:
   html:
     toc: true
-  pdf:
-    author: Chandan Kumar
-    pdf-engine: weasyprint
+    toc-location: right
 css: cv.css
-format-links: [pdf]
 ---
 
-::: {.print-only .contact-block}
-chandan@iastate.edu
-:::
+## Chandan Kumar
 
-<!-- # Chandan Kumar -->
+**Assistant Professor**  
+  Computer Science, Alfred University  
 
-## Contact Information
+  📧 kumar@alfred.edu  
+  📞   
+  🌐 [www.waryscientist.com](http://www. waryscientist.com)  
+  🎓 [Google Scholar](https://scholar.google.com/citations?hl=en&user=que-rRAAAAAJ&view_op=list_works)  
+  💻 [GitHub](https://github.com/Chandan1002)  
+  🔗 [LinkedIn](https://www.linkedin.com/in/chandan1002) ·  
 
-- **Email:** chandan1002@gmail.com
-- **LinkedIn:** [chandan1002](https://www.linkedin.com/in/chandan1002/)
-- **GitHub:** [chandan1002](https://github.com/chandan1002)
+
+---
 
 ## Education
 
@@ -39,81 +38,174 @@ chandan@iastate.edu
 - **Degree:** Bachelor of Technology in Computer Science (With Distinction)
 - **Graduation Year:** June 2015
 
-## Work Experience
+---
 
-### Iowa State University
-- **Position:** Graduate Research Assistant
-- **Dates:** January 2023 - August 2024
-- **Description:** 
-  - Skills Used: Python, Pytorch, CUDA, bash scripts, slurm.
-  - Unsupervised Learning approach to Object-Detection. Developed fully unsupervised leaning based object detection algorithm using contrastive learning.
-  - Unsupervised Image retrieval. Developed algorithm to retrieve image using unsupervised learning.
-  - Scaling Unsupervised Learning algorithm to HPC(High Performance Computing). 
+## Professional Experience
 
-### Hagie Manufacturing (John Deere)
-- **Position:** Data Scientist Coop
-- **Dates:** January 2022 - January 2023
-- **Description:** 
-  - President award winner for extraordinary performance.
-  - Skills Used: Alteryx, Ignition SCADA, Databricks, PowerBI, Microsoft Excel,AWS, RabbitMQ, Python, OpenCV, Pytorch.   
-  - Using tools and techniques to perform Text Mining, ML models development for predictive analysis and automation and Computer Vision models. 
-  - Design and develop project pipeline(Data Exploration, Sampling, Feature Engineering, Model Building, Field Performance Evaluation).
+<details class="cv-section" >
+<summary>Assistant Professor – Alfred University</summary>
 
-### Iowa State University
-- **Position:** Graduate Research Assistant
-- **Dates:** January 2019 - December 2021
-- **Description:** 
-  - Skills Used: CAN-Bus, Python, OpenCV, POE, Pytorch, ROS
-  - Developed real-time driver assist system for large farm-vehicles. Involved a system of 16 cameras, edge computing and image stitching to utilize the CAN protocols and integrate the mechanism to existing system.
-  - Real-time depth detection and analysis using stereo camera(s). Used stereo camera to develop algorithm that can perform real-time depth detection and calculate volume of objects from the drone.
+  Aug 2025 – Present | Alfred, NY
 
-### Iowa State University
-- **Position:** Graduate Teaching Assistant
-- **Dates:** January 2017 - May 2019
-- **Description:** 
-  - COMS 106 (Introduction to programming using HTML5, CSS, PHP, SQL, JQuery, JavaScript). Responsible for helping students understanding concepts, clearing their doubts and grading assignments.
+- Teaching foundational programming, algorithmic thinking, and computational problem-solving.
+- Teaching advanced AI, deep learning, and computer vision courses.
+- Mentoring undergraduate research and project-based learning.
+</details>
 
-### EXL(Inductis) Services India Pvt. Ltd.
-- **Position:** Business Analyst
-- **Dates:** February 2016 - December 2016
-- **Description:** 
-  - Awarded Rising Star Award (1 of 6 awardees out of 37,000+ employees)
-  - Skills used: SAS, SQL, IBM-Netezza, DB2,Tableau, R, Python, Microsoft Excel. 
-  - Utilized applications like SAS to identify trends and relationships between different pieces of data, draw appropriate conclusions and translated analytical findings.
-  - Created and worked on various reporting frameworks (Microsoft Excel, Tableau) that involved customer segmentation and clustering exercises for customers
+<details class="cv-section">
+<summary>Research Scientist – Cygeniq Inc</summary>
 
-## Skills
+  Jun 2025 – Aug 2025 | Remote
 
-- Languages and Tools: Python, Java, OpenCV, Pytorch,CUDA, Databricks, Ignition, Alteryx, AWS, Jenkins, IoT, Git, Unix 
-- Web Technologies: HTML, CSS, React, AngularJS, NodeJS.
+- Developed a specialized language model for automated cybersecurity threat detection.
+- Reduced manual incident classification time by 75%.
+- Designed real-time ML pipelines aligned with MITRE ATT&CK framework.
+</details>
 
-<!-- ## Projects -->
+<details class="cv-section">
+<summary>Graduate Researcher – Oak Ridge National Laboratory</summary>
 
-<!-- ### Project 1 -->
-<!-- - **Description:** Brief description of the project. -->
-<!-- - **Technologies Used:** List of technologies used. -->
-<!-- - ... -->
+  Sep 2024 – May 2025 | Oak Ridge, TN
 
-<!-- ### Project 2 -->
-<!-- - ... -->
+- Designed a 1B+ parameter multimodal foundation model using Vision Transformers.
+- Achieved 95% accuracy in satellite image vectorization.
+- Optimized polygonization algorithms, reducing runtime by 400%.
+</details>
 
-<!-- ## Certifications -->
+<details class="cv-section">
+<summary>Visiting Researcher – Pacific Northwest National Laboratory</summary>
 
-<!-- - Certification Name 1 -->
-<!-- - Certification Name 2 -->
-<!-- - ... -->
+  May 2024 – Dec 2024 | Richland, WA
 
-## Awards/Grants
+- Developed unsupervised semantic segmentation models using contrastive learning.
+- Worked in HPC environments for large-scale training.
+</details>
 
-### ACCESS grant supported by NSF (CIS220069)
-- **Description:** Develop algorithm for Unsupervised Object Detection.
-- **Position:** Co-PI.
-- **Grant Amount:** USD 174,000.
+<details class="cv-section">
+<summary>Graduate Research Assistant- Iowa State University</summary>
 
-## Professional Service
+  Jan 2023 - Aug 2024 | Ames, IA
 
-### Invited Speaker
-- **Description:** International 7-in-1 Symposium, CGC, Herning, Denmark.
+- Skills Used: Python, Pytorch, CUDA, bash scripts, slurm.
+- Unsupervised Learning approach to   Object-Detection. Developed fully unsupervised leaning based object detection algorithm using contrastive learning.
+- Unsupervised Image retrieval. Developed algorithm to retrieve image using unsupervised learning.
+- Scaling Unsupervised Learning algorithm to HPC(High Performance Computing).
+</details>
+
+<details class="cv-section">
+<summary>Data Scientist Coop-Hagie Manufacturing (John Deere)</summary>
+
+  Jan 2022 – Jan 2023 | Clarion, IA
+
+- President award winner for extraordinary performance.
+- Skills Used: Alteryx, Ignition SCADA, Databricks, PowerBI, Microsoft Excel,AWS, RabbitMQ, Python, OpenCV, Pytorch.
+- Using tools and techniques to perform Text Mining, ML models development for predictive analysis and automation and Computer Vision models.
+- Design and develop project pipeline(Data Exploration, Sampling, Feature Engineering, Model Building, Field Performance Evaluation).
+</details>
+
+<details class="cv-section">
+<summary>Graduate Research Assistant - Iowa State University</summary>
+
+  Jan 2017 – Dec 2022 | Ames, IA
+
+- Skills Used: CAN-Bus, Python, OpenCV, POE, Pytorch, ROS
+- Developed real-time driver assist system for large farm-vehicles. Involved a system of 16 cameras, edge computing and image stitching to utilize the CAN protocols and integrate the mechanism to existing system.
+- Real-time depth detection and analysis using stereo camera(s). Used stereo camera to develop algorithm that can perform real-time depth detection and calculate volume of objects from the drone.
+</details>
+
+<details class="cv-section">
+<summary>Business Analyst - EXL(Inductis) Services India Pvt. Ltd.</summary>
+
+  Feb 2016 – Dec 2016 | Gurugram, IN
+
+- Awarded Rising Star Award (1 of 6 awardees out of 37,000+ employees)
+Skills used: SAS, SQL, IBM-Netezza, DB2,Tableau, R, Python, Microsoft Excel.
+- Utilized applications like SAS to identify trends and relationships between different pieces of data, draw appropriate conclusions and translated analytical findings.
+- Created and worked on various reporting frameworks (Microsoft Excel, Tableau) that involved customer segmentation and clustering exercises for customers
+</details>
+---
+
+## Teaching Experience
+
+<details class="cv-section">
+<summary> Assistant Professor – Alfred University</summary>
+
+2025 – Present | Alfred, NY
+
+- CSCI 156: Introduction to Computer Science
+- CSCI 400: AI for Computer Vision
+
+</details>
+
+<details class="cv-section">
+<summary>Teaching Assistant & Mentor – Iowa State University</summary>
+
+2017 – 2024 | Ames, IA
+
+- COMS 1130: Spreadsheets & Databases (1,200+ students)
+- AI 2010: Introduction to Applied AI
+- COMS 1060: Introduction to Web Programming
+- COMS 402C: Computer Science Senior Project
+</details>
+
+---
+
+## Publications (Selected)
+
+- *Discerning Self-supervised Learning and Weakly Supervised Learning* — **ICLR 2024**
+- *Unsupervised learning based object detection using Contrastive Learning* — 2024
+- *Efficient Volume Estimation for Dynamic Environments using Deep Learning on the Edge* — PAISE @ IPDPS 2022
+- *Pattern Based Multivariate Regression using Deep Learning* — CVPR LXAI 2022
+
+*(Full list available upon request)*
+
+---
+
+## Technical Skills
+
+- **Languages:** Python, Java, C/C++, JavaScript, HTML/CSS
+- **Frameworks:** PyTorch, TensorFlow, OpenCV, HuggingFace
+- **Tools:** Docker, AWS, Git, CUDA, Linux
+- **Libraries:** NumPy, Pandas, Scikit-learn, Matplotlib
+
+---
+
+## Awards & Grants
+
+- NSF ACCESS Grant (Co-PI): **$174,090**
+- NSF ACCESS Extension Grant: **$8,000**
+- Intel Edge AI Scholarship
+- PyTorch Scholarship Challenge
+
+---
+
+## Service & Leadership
+
+- Program Committee: **AAAI 2025**
+- Reviewer: ICML, ICLR, NeurIPS, ECCV, WACV
+- President, Graduate Student Organization (raised $100K+)
+
+---
+### Reviewer
+- **Conference:** ECCV 2024.
+- **Conference:** ICML 2024.
+- **Conference:** ICLR 2024.
+- **Conference:** NeurIPS 2023.
+- **Journal:** Journal of AI Research (JAIR).
+- **Journal:** River Publishers.
+
+## Professional Memberships
+- IEEE
+- IEEE Computer Society
+- Cohere for AI
+
+## Invited Talks
+
+- **AI and Computer Vision for Sustainable Power Grids**  
+  AU Energy Conference 2025, Alfred, NY
+- **Volume Analysis for Dynamic Environments (2021)**  
+  International 7-in-1 Symposium, CGC, Herning, Denmark.
+
 
 ### Reviewer
 - **Conference:** ECCV 2024.
@@ -128,8 +220,5 @@ chandan@iastate.edu
 - IEEE Computer Society
 - Cohere for AI
 
-## Attachments
-
 ### Resume
-- **Description:** Click [here](CVChandan.pdf) to view my resume.
-- **embed:** CVChandan.pdf
+- **Description:** Click [here](Chandan_CV.pdf) to view my resume.

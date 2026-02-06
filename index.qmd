@@ -1,109 +1,62 @@
 ---
-theme:
-  light: flatly
-  dark: darkly
-title: "Chandan Kumar"
-about:
-    template: trestles
-    links:
-        - icon: linkedin
-          text: LinkedIn
-          url: https://www.linkedin.com/in/chandan1002/
-        - icon: twitter
-          text: Twitter
-          url: https://twitter.com/CK1002
-        - icon: github
-          text: Github
-          url: https://github.com/Chandan1002
-        - text: "{{< fa envelope >}} Email"
-          # url: mailto:chris+website@chrisvoncsefalvay.com
-          url: mailto:chandan1002@gmail.com
-        - text: "{{< ai orcid >}} ORCID 0000-0003-0138-5312"
-          url: https://orcid.org/0000-0003-0138-5312
-        - text: "{{< ai google-scholar >}} Google Scholar"
-          url: https://scholar.google.com/citations?user=0luu1sUAAAAJ
-        # - text: "{{< ai viaf >}} VIAF 7190162669581955500004"
-        #   url: http://viaf.org/viaf/7190162669581955500004
-        # - text: "{{< ai isni >}} ISNI 0000 0005 0265 5729"
-        #   url: https://isni.org/isni/0000000502655729
-        # - text: "{{< ai researcherid >}} RID IZD-6900-2023"
-        #   url: https://www.webofscience.com/wos/author/record/IZD-6900-2023
-        # - text: "{{< ai osf >}} OSF"
-        #   url: https://osf.io/awhgj
-image: img/ChandanKumar.JPG
-comments: false
+title: ""
+page-layout: full
+sidebar: false
+toc: false
+css: assets/custom.css
 ---
 
-## Bio
 
-As a Computer Vision and Deep Learning researcher at Oak Ridge National Laboratory, I work at the intersection of unsupervised learning and computer vision, specializing in building footprint reconstruction and multimodal foundation models. My research, published in top-tier venues like ICLR and CVPR, focuses on developing innovative solutions in unsupervised object detection and real-time vision systems.
-With NSF-funded research and industry recognition including the President's Award at John Deere, I bridge the gap between theoretical advances and practical applications. Currently pursuing my Ph.D. at Iowa State University, I contribute to groundbreaking projects across national laboratories while serving as a reviewer for prestigious conferences including ECCV, ICML, and NeurIPS.
-I specialize in developing scalable solutions that push the boundaries of computer vision and deep learning, with particular expertise in:
 
-- Unsupervised learning algorithms for object detection and discovery
-- Real-time computer vision systems for edge computing
-- Multi-modal foundation models for earth observation
-- Semantic segmentation and building footprint reconstruction 
+<!-- ================= Profile & Bio Columns ================= -->
+::: {.columns}
 
-<!-- I am the author of [Computational Modeling of Infectious Disease](https://computationalinfectiousdisease.com), a richly illustrated compendium on modern computational epidemiology, as well as [a growing body of research](papers). -->
+::: {.column width="30%"}
+![](assets/profile.jpg){.profile-img}
 
-<!-- I am currently attending [Iowa State University](https://www.iastate.edu/) for my Ph.D. (Computer Science). I attended Iowa State University for my Masters of Science (Computer Science), graduating with a distinction (1st class). Prior to Iowa State, I hold Bachelor of Technology (B. Tech.) Degree from [B.I.T. Sindri](https://www.bitsindri.ac.in/), India, graduating with a distinction (1st class). <!-- I also hold degrees from Cardiff and Robert Gordon University Aberdeen, and have studied at the University of Leiden under an Erasmus programme. Today, I am [board certified in public health](https://cph.nbphe.org/employer_letter/19626), a Fellow of the [Royal Society for Public Health](https://www.rsph.org.uk/) and a member of several other learned societies. --> -->
+🎓 [Google Scholar](https://scholar.google.com/citations?hl=en&user=que-rRAAAAAJ&view_op=list_works)  
+💻 [GitHub](https://github.com/Chandan1002)  
+🔗 [LinkedIn](https://www.linkedin.com/in/chandan1002/)  
+✉️ [Email](mailto:kumar@alfred.edu)
+:::
 
-<!-- I am currently a Practice Directorr at  for Biomedical AI/ML for [HCLTech](https://www.hcltech.com/), where I advise the world's leading life sciences, medical devices and pharma companies on how to leverage AI/ML to improve their products and serve their customers better. I am also a visiting thesis supervisor for students on the data science track of the mathematics programme at the [Budapest University of Technology and Economics](https://www.bme.hu/?language=en). -->
 
-As part of my service to the profession, I've been a reviewer for [ICLR](https://iclr.cc/) and [NeurIPS](https://nips.cc/), ICML, ECCV .
+::: {.column width="70%"}
 
-You can find a [list of my publications here](papers). <!-- My work on COVID-19 has been [featured in the media](media). I also write on various topics as the fancy strikes -- you can peruse my [notebook](blog) here. -->
+### Assistant Professor, Computer Science  
+Alfred University, New York
 
-## Key research interests
+I am an Assistant Professor of Computer Science at Alfred University and a researcher 
+in Computer Vision and Deep Learning, specializing in unsupervised learning, real-time  
+vision systems, and multimodal foundation models. I completed my Ph.D. at Iowa State  
+University, where my research focused on scalable computer vision methods for object  
+discovery, semantic segmentation, and building footprint reconstruction.
 
--   **Deep Learning**: Unsupervised Learning algorithms, Unsupervised object retrieval.
--   **Computer Vision**: Object Detection.
+I worked at the intersection of theory and practice through research collaborations with  
+Oak Ridge National Laboratory, with publications in top-tier venues such as ICLR and  
+CVPR and support from NSF-funded projects. My work emphasizes developing robust,  
+real-world AI systems, and I actively contribute to the research community as a reviewer  
+for leading conferences including ECCV, ICML, and NeurIPS.
 
-## Teaching
+:::
 
-<!-- I am a visiting thesis supervisor for students on the data science track of the mathematics programme at the [Budapest University of Technology and Economics](https://www.bme.hu/?language=en) - you can read more about this [here](teaching). -->
+:::
 
-<!-- From time to time, I get invited to give talks and lectures. My capacity for this is somewhat limited due to other commitments, but if you are interested in having me speak at your event, please [get in touch](mailto:chris+website@chrisvoncsefalvay.com). -->
-
-## Selected papers
-
-**Optimal Deep Learning Model for UAVs: A Case Study.** **Kumar, Chandan**, Jannesari, Ali. *WMPC.* 2023, [doi: 10.1109/WPMC59531.2023.10338971](https://doi.org/10.1109/WPMC59531.2023.10338971).
-
-<!-- **JAMPI: Efficient matrix multiplication in Spark using barrier execution mode.** Foldi T, **von Csefalvay C**, Perez NA. *BDCC* 2020, 4(4):32. [doi: 10.3390/bdcc4040032](https://doi.org/10.3390/bdcc4040032). -->
-
-<!-- **VAERS data reveals no increased risk of neuroautoimmune adverse events from COVID- vaccines.** **von Csefalvay, C.** *medRxiv* 2021. [doi: 10.1101/2021.06.13.21258851](https://doi.org/10.1101/2021.06.13.21258851). -->
-
-See more [here](papers).
-
-## Professional affiliations
-
-[**IEEE**](https://www.ieee.org/) \| Member since 2023
-
-IEEE Computer Society \| Member since 2024
-
-## Personal life
-
-I currently reside in Ames, IA, USA, though my roots trace back to Bihar, India. During my formative years, I resided in Mussoorie, India, where I pursued my education at Oak Grove School. Since 2017, I have called the United States my home, where I am currently pursuing my studies.
-
-During my leisure hours, I indulge in reading and attempting to cook, albeit with limited success. <!-- and Renaissance polyphony (esp. Thomas Tallis and Orlando di Lasso). I'm credited for a somewhat pretty sequence of integers called Jellyfish Heart numbers ([OEIS A344856](https://oeis.org/A344856)), which I discovered in 2020 while doing something that has nothing at all to do with my day job. -->
-
-<!-- I live with [neuromyelitis optica](https://en.wikipedia.org/wiki/Neuromyelitis_optica) since 2015, which has left me with a lifelong desire to understand complex, multicausal health conditions like NMOSD better. -->
-
-## News
-
----
-<!-- date: 12/22/2023 -->
-date-format: "MMM D, YYYY"
----
-
-<!-- date: 12/22/2023 -->
-
--   Feb/15/2024 : My research paper gets accepted at ICLR 2024.
--   Feb/14/2024 : Invited to be a reviewer for ECCV 2024.
--   Jan/16/2024 : Accepted to attend CIFAR DLRL summer school, 2024.
--   Dec/22/2023 : Invited to be a reviewer for ICML 2024.
--   Sept/04/2023 : Invited to be a reviewer for ICLR 2024.
--   Apr/10/2023 : Invited to be a reviewer for NeurIPS 2023. <!-- ## Pronunciation guide<!-- -->
-
-<!-- My last name rhymes with Chick-Fil-A.-->
+<!-- ================= News Highlights ================= -->
+<section id="news">
+  <h2>📢 News Highlights</h2>
+  <ul class="news-list">
+    <li class="news-item">
+      <span class="news-text">Two new Research Publications.</span>
+      <span class="news-date">Nov, 2025</span>
+    </li>
+    <li class="news-item">
+      <span class="news-text">Gave a talk at AU Energy.</span>
+      <span class="news-date">Oct, 2025</span>
+    </li>
+    <li class="news-item">
+      <span class="news-text">Started working as Assistant Professor at Alfred University.</span>
+      <span class="news-date">Aug,2025</span>
+    </li>
+  </ul>
+</section>
