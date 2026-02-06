@@ -1,6 +1,6 @@
 ---
 title: "Teaching"
-format: html
+
 ---
 
 I am an Assistant Professor of Computer Science at Alfred University and have taught as a
