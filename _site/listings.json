@@ -1,13 +1,5 @@
 [
   {
-    "listing": "/media/index.html",
-    "items": [
-      "/media/tech-for-good/index.html",
-      "/media/fr-disinfectants/index.html",
-      "/media/euronews-covid/index.html"
-    ]
-  },
-  {
     "listing": "/posts/index.html",
     "items": [
       "/posts/loss-functions/index.html",
@@ -15,6 +7,14 @@
       "/posts/random-notes/index.html",
       "/posts/statistics-notes/index.html",
       "/posts/notes-on-activation-functions/index.html"
+    ]
+  },
+  {
+    "listing": "/media/index.html",
+    "items": [
+      "/media/tech-for-good/index.html",
+      "/media/fr-disinfectants/index.html",
+      "/media/euronews-covid/index.html"
     ]
   }
 ]
