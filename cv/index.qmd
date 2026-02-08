@@ -17,7 +17,7 @@ css: cv.css
   🌐 [Website](https://waryscientist.com/)  
   🎓 [Google Scholar](https://scholar.google.com/citations?hl=en&user=que-rRAAAAAJ&view_op=list_works)  
   💻 [GitHub](https://github.com/Chandan1002)  
-  🔗 [LinkedIn](https://www.linkedin.com/in/chandan1002) ·  
+  🔗 [LinkedIn](https://www.linkedin.com/in/chandan1002) 
 
 
 ---
@@ -152,7 +152,7 @@ Skills used: SAS, SQL, IBM-Netezza, DB2,Tableau, R, Python, Microsoft Excel.
 
 ## Publications (Selected)
 
-- *Discerning Self-supervised Learning and Weakly Supervised Learning* — **ICLR 2024**
+- *Discerning Self-supervised Learning and Weakly Supervised Learning* — ICLR 2024
 - *Unsupervised learning based object detection using Contrastive Learning* — 2024
 - *Efficient Volume Estimation for Dynamic Environments using Deep Learning on the Edge* — PAISE @ IPDPS 2022
 - *Pattern Based Multivariate Regression using Deep Learning* — CVPR LXAI 2022
@@ -181,7 +181,7 @@ Skills used: SAS, SQL, IBM-Netezza, DB2,Tableau, R, Python, Microsoft Excel.
 
 ## Service & Leadership
 
-- Program Committee: **AAAI 2025**
+- Program Committee: AAAI 2025
 - Reviewer: ICML, ICLR, NeurIPS, ECCV, WACV
 - President, Graduate Student Organization (raised $100K+)
 
@@ -206,19 +206,6 @@ Skills used: SAS, SQL, IBM-Netezza, DB2,Tableau, R, Python, Microsoft Excel.
 - **Volume Analysis for Dynamic Environments (2021)**  
   International 7-in-1 Symposium, CGC, Herning, Denmark.
 
-
-### Reviewer
-- **Conference:** ECCV 2024.
-- **Conference:** ICML 2024.
-- **Conference:** ICLR 2024.
-- **Conference:** NeurIPS 2023.
-- **Journal:** Journal of AI Research (JAIR).
-- **Journal:** River Publishers.
-
-## Professional Memberships
-- IEEE
-- IEEE Computer Society
-- Cohere for AI
 
 ### Resume
 - **Description:** Click [here](Chandan_CV.pdf) to view my resume.
