@@ -42,8 +42,8 @@ website:
       - href: teaching/
         text: Teaching  
 
-      - href: My_Lab/
-        text: ''
+      - href: Lab/
+        text: Lab
 
     right:
       - icon: github

@@ -10,7 +10,7 @@
 <atom:link href="https://chandankumar.ai/posts/index.xml" rel="self" type="application/rss+xml"/>
 <description>Dr. Chandan Kumar is currently working as an Assistant Professor in Computer Science Department  at Alfred University, New York. </description>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Sat, 13 Jan 2024 06:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 13 Jan 2024 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Notes on Loss Functions</title>
   <dc:creator>Chandan Kumar</dc:creator>
@@ -64,7 +64,7 @@ Chandan Kumar. 2024. <span>“Notes on Loss Functions.”</span> <a href="https:
   <category>AI</category>
   <category>Loss Functions</category>
   <guid>https://chandankumar.ai/posts/loss-functions/</guid>
-  <pubDate>Sat, 13 Jan 2024 06:00:00 GMT</pubDate>
+  <pubDate>Sat, 13 Jan 2024 05:00:00 GMT</pubDate>
   <media:content url="https://chandankumar.ai/posts/loss-functions/activation.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -115,7 +115,7 @@ Chandan Kumar. 2024. <span>“Notes on Results Metrics.”</span> <a href="https
   <category>AI</category>
   <category>Results Metrics</category>
   <guid>https://chandankumar.ai/posts/results_metrics/</guid>
-  <pubDate>Sat, 13 Jan 2024 06:00:00 GMT</pubDate>
+  <pubDate>Sat, 13 Jan 2024 05:00:00 GMT</pubDate>
   <media:content url="https://chandankumar.ai/posts/results_metrics/activation.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -174,7 +174,7 @@ Chandan Kumar. 2024. <span>“Very Random Notes.”</span> <a href="https://chan
   <category>Statistics</category>
   <category>writing</category>
   <guid>https://chandankumar.ai/posts/random-notes/</guid>
-  <pubDate>Sat, 06 Jan 2024 06:00:00 GMT</pubDate>
+  <pubDate>Sat, 06 Jan 2024 05:00:00 GMT</pubDate>
   <media:content url="https://chandankumar.ai/posts/random-notes/Statistics.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -238,7 +238,7 @@ Chandan Kumar. 2024. <span>“Statistics in AI.”</span> <a href="https://chand
   <category>Statistics</category>
   <category>writing</category>
   <guid>https://chandankumar.ai/posts/statistics-notes/</guid>
-  <pubDate>Sat, 06 Jan 2024 06:00:00 GMT</pubDate>
+  <pubDate>Sat, 06 Jan 2024 05:00:00 GMT</pubDate>
   <media:content url="https://chandankumar.ai/posts/statistics-notes/Statistics.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -301,7 +301,7 @@ Chandan Kumar. 2024. <span>“Notes on Activation Functions.”</span> <a href="
   <category>AI</category>
   <category>Activation Functions</category>
   <guid>https://chandankumar.ai/posts/notes-on-activation-functions/</guid>
-  <pubDate>Mon, 01 Jan 2024 06:00:00 GMT</pubDate>
+  <pubDate>Mon, 01 Jan 2024 05:00:00 GMT</pubDate>
   <media:content url="https://chandankumar.ai/posts/notes-on-activation-functions/activation.jpeg" medium="image" type="image/jpeg"/>
 </item>
 </channel>

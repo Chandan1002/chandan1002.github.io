@@ -1,0 +1,103 @@
+---
+title: ""
+
+---
+
+<section class="lab-intro">
+
+## Vision
+
+To advance a future where computer vision and machine learning systems can learn robust, meaningful representations from the world with minimal reliance on human-labeled data, enabling scalable, adaptable AI that generalizes across real-world domains from healthcare to agriculture to environmental monitoring.
+
+## Mission
+
+Our lab develops unsupervised and self-supervised learning methods for object detection, image retrieval, and large-scale vision models, working at the intersection of theory and application to ensure our methods solve real problems, while training the next generation of researchers through mentorship and open collaboration.
+
+</section>
+
+## Research Focus
+
+<div class="lab-focus-grid">
+
+<div class="lab-focus-card is-detect">
+<div class="lab-focus-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8"></path><path d="M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8"></path><path d="M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16"></path><path d="M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16"></path><circle cx="12" cy="12" r="3.2"></circle></svg>
+</div>
+<strong>Unsupervised Learning for Object Detection</strong>
+<p>Building algorithms — clustering, self-supervised learning, generative modeling — that extract meaningful structure from unlabeled visual data, reducing dependence on annotation.</p>
+<span class="lab-focus-tags">
+<span>Clustering</span>
+<span>Self-Supervised Learning</span>
+<span>Generative Modeling</span>
+</span>
+</div>
+
+<div class="lab-focus-card is-arch">
+<div class="lab-focus-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8.5 4.5L12 12 3.5 7.5 12 3z"></path><path d="M3.5 12L12 16.5 20.5 12"></path><path d="M3.5 16.5L12 21l8.5-4.5"></path></svg>
+</div>
+<strong>Efficient Architectures for Large Vision Models</strong>
+<p>Designing and optimizing large-scale vision architectures for deployment in resource-constrained and real-world environments.</p>
+<span class="lab-focus-tags">
+<span>Model Compression</span>
+<span>Edge Deployment</span>
+<span>Large Vision Models</span>
+</span>
+</div>
+
+<div class="lab-focus-card is-robust">
+<div class="lab-focus-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 2.8v5.7c0 4.9-3.2 8.9-7.5 10.5-4.3-1.6-7.5-5.6-7.5-10.5V5.8L12 3z"></path><path d="M8.8 12.2l2.2 2.2 4.2-4.4"></path></svg>
+</div>
+<strong>Robustness and Generalization</strong>
+<p>Ensuring models perform reliably under domain shift, occlusion, and varying conditions, validated across diverse real-world datasets.</p>
+<span class="lab-focus-tags">
+<span>Domain Shift</span>
+<span>Robustness</span>
+<span>Real-World Validation</span>
+</span>
+</div>
+
+<div class="lab-focus-card is-collab">
+<div class="lab-focus-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5.5" r="2.3"></circle><circle cx="6" cy="12" r="2.3"></circle><circle cx="18" cy="18.5" r="2.3"></circle><path d="M8.1 10.8l7.7-4.5M8.1 13.2l7.7 4.5"></path></svg>
+</div>
+<strong>Applied Collaboration</strong>
+<p>Partnering with domain experts in healthcare, agriculture, and environmental monitoring to translate methods into real-world impact.</p>
+<span class="lab-focus-tags">
+<span>Healthcare</span>
+<span>Agriculture</span>
+<span>Environmental Monitoring</span>
+</span>
+</div>
+
+</div>
+
+<!-- ## Members -->
+
+<!-- ### Principal Investigator -->
+
+<!-- **Chandan Kumar** — Assistant Professor, Computer Science, Alfred University -->
+
+### Students
+
+- [Dilafruz Chamanova](https://www.linkedin.com/in/dilafruz-chamanova)
+- [Ahmad Majidy](https://www.linkedin.com/in/ahmad-majidy-149598273)
+
+## Supported By
+
+<div class="lab-sponsors">
+
+<a href="https://access-ci.org/" target="_blank" class="lab-sponsor-card">
+<img src="/img/logos/access-nsf.svg" alt="NSF ACCESS logo">
+</a>
+
+<a href="https://www.musco.com/" target="_blank" class="lab-sponsor-card">
+<img src="/img/logos/musco-lighting.svg" alt="Musco Lighting logo">
+</a>
+
+</div>
+
+<!-- ## Openings -->
+
+<!-- _Information about open positions (graduate students, undergraduate researchers, etc.) goes here._ -->

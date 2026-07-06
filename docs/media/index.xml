@@ -10,7 +10,7 @@
 <atom:link href="https://chandankumar.ai/media/index.xml" rel="self" type="application/rss+xml"/>
 <description>Dr. Chandan Kumar is currently working as an Assistant Professor in Computer Science Department  at Alfred University, New York. </description>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Tue, 07 Mar 2023 06:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 07 Mar 2023 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Tech for Good podcast</title>
   <dc:creator>Chris von Csefalvay</dc:creator>
@@ -39,7 +39,7 @@ Csefalvay, Chris von. 2023. <span>“Tech for Good Podcast.”</span> March
 </div></div></section></div> ]]></description>
   <category>Tech for Good</category>
   <guid>https://chandankumar.ai/media/tech-for-good/</guid>
-  <pubDate>Tue, 07 Mar 2023 06:00:00 GMT</pubDate>
+  <pubDate>Tue, 07 Mar 2023 05:00:00 GMT</pubDate>
   <media:content url="https://chandankumar.ai/media/tech-for-good/header.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -75,7 +75,7 @@ Nun Vor Injektion von Desinfektionsmittel.”</span> May 11, 2020. <a href="http
 </div></div></section></div> ]]></description>
   <category>Frankfurter Rundschau</category>
   <guid>https://chandankumar.ai/media/fr-disinfectants/</guid>
-  <pubDate>Mon, 11 May 2020 05:00:00 GMT</pubDate>
+  <pubDate>Mon, 11 May 2020 04:00:00 GMT</pubDate>
   <media:content url="https://chandankumar.ai/media/fr-disinfectants/header.png" medium="image" type="image/png" height="80" width="144"/>
 </item>
 <item>
@@ -112,7 +112,7 @@ Programja.”</span> April 17, 2020. <a href="https://chrisvoncsefalvay.com/medi
 </div></div></section></div> ]]></description>
   <category>Euronews</category>
   <guid>https://chandankumar.ai/media/euronews-covid/</guid>
-  <pubDate>Fri, 17 Apr 2020 05:00:00 GMT</pubDate>
+  <pubDate>Fri, 17 Apr 2020 04:00:00 GMT</pubDate>
   <media:content url="https://chandankumar.ai/media/euronews-covid/header.webp" medium="image" type="image/webp"/>
 </item>
 </channel>
