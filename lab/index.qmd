@@ -24,7 +24,7 @@ Our lab develops unsupervised and self-supervised learning methods for object de
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8"></path><path d="M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8"></path><path d="M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16"></path><path d="M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16"></path><circle cx="12" cy="12" r="3.2"></circle></svg>
 </div>
 <strong>Unsupervised Learning for Object Detection</strong>
-<p>Building algorithms — clustering, self-supervised learning, generative modeling — that extract meaningful structure from unlabeled visual data, reducing dependence on annotation.</p>
+<p>Building algorithms such as clustering, self-supervised learning, generative modeling, that extract meaningful structure from unlabeled visual data, reducing dependence on annotation.</p>
 <span class="lab-focus-tags">
 <span>Clustering</span>
 <span>Self-Supervised Learning</span>
@@ -87,6 +87,10 @@ Our lab develops unsupervised and self-supervised learning methods for object de
 ## Supported By
 
 <div class="lab-sponsors">
+
+<a href="https://www.alfred.edu/" target="_blank" class="lab-sponsor-card">
+<img src="/img/logos/alfred-university.svg" alt="Alfred University logo">
+</a>
 
 <a href="https://access-ci.org/" target="_blank" class="lab-sponsor-card">
 <img src="/img/logos/access-nsf.svg" alt="NSF ACCESS logo">
