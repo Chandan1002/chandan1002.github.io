@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index – Chandan Kumar</title>
+<title>CLAVR – Chandan Kumar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,10 +72,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../assets/custom.css">
-<meta property="og:title" content="– Chandan Kumar">
-<meta property="og:image" content="https://chandankumar.ai/img/logos/alfred-university.svg">
+<meta property="og:title" content="CLAVR">
+<meta property="og:image" content="https://chandankumar.ai/img/logos/CLAVR-logo.jpg">
 <meta property="og:site_name" content="Chandan Kumar">
-<meta property="og:image:alt" content="Alfred University logo">
+<meta property="og:image:alt" content="CLAVR - Perceive. Learn. Advance.">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../lab/"> 
-<span class="menu-text">Lab</span></a>
+<span class="menu-text">CLAVR</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -142,28 +142,30 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#vision" id="toc-vision" class="nav-link active" data-scroll-target="#vision">Vision</a></li>
-  <li><a href="#mission" id="toc-mission" class="nav-link" data-scroll-target="#mission">Mission</a></li>
-  <li><a href="#research-focus" id="toc-research-focus" class="nav-link" data-scroll-target="#research-focus">Research Focus</a>
-  <ul class="collapse">
-  <li><a href="#students" id="toc-students" class="nav-link" data-scroll-target="#students">Students</a></li>
-  </ul></li>
-  <li><a href="#supported-by" id="toc-supported-by" class="nav-link" data-scroll-target="#supported-by">Supported By</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
+<div class="clavr-page">
+<canvas id="clavr-network" class="clavr-network">
+</canvas>
+<div class="clavr-content">
+<div class="lab-hero">
+<p><img src="../img/logos/CLAVR-logo.jpg" alt="CLAVR - Perceive. Learn. Advance."></p>
+</div>
 <section class="lab-intro">
+<p class="lab-subtitle">
+Computer Learning &amp; Advanced Visual Research Lab
+</p>
+<p class="lab-tagline">
+Perceive. Learn. Advance.
+</p>
+<p>CLAVR sits at the critical turning point of computer vision and unsupervised machine learning. By building generalized, self-supervised models that process complex visual inputs without human intervention, our lab creates a foundational computing umbrella capable of advancing diverse real-world systems from optimizing battery grids and parsing geospatial terrain to automating precision ecosystems.</p>
 <section id="vision" class="level2">
 <h2 class="anchored" data-anchor-id="vision">Vision</h2>
 <p>To advance a future where computer vision and machine learning systems can learn robust, meaningful representations from the world with minimal reliance on human-labeled data, enabling scalable, adaptable AI that generalizes across real-world domains from healthcare to agriculture to environmental monitoring.</p>
@@ -173,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Our lab develops unsupervised and self-supervised learning methods for object detection, image retrieval, and large-scale vision models, working at the intersection of theory and application to ensure our methods solve real problems, while training the next generation of researchers through mentorship and open collaboration.</p>
 </section>
 </section>
-<section id="research-focus" class="level2">
+<section id="research-focus" class="level2 clavr-section">
 <h2 class="anchored" data-anchor-id="research-focus">Research Focus</h2>
 <div class="lab-focus-grid">
 <div class="lab-focus-card is-detect">
@@ -225,18 +227,18 @@ Partnering with domain experts in healthcare, agriculture, and environmental mon
 <p><span class="lab-focus-tags"> <span>Healthcare</span> <span>Agriculture</span> <span>Environmental Monitoring</span> </span></p>
 </div>
 </div>
+</section>
 <!-- ## Members -->
 <!-- ### Principal Investigator -->
 <!-- **Chandan Kumar** — Assistant Professor, Computer Science, Alfred University -->
-<section id="students" class="level3">
+<section id="students" class="level3 clavr-section">
 <h3 class="anchored" data-anchor-id="students">Students</h3>
 <ul>
 <li><a href="https://www.linkedin.com/in/dilafruz-chamanova">Dilafruz Chamanova</a></li>
 <li><a href="https://www.linkedin.com/in/ahmad-majidy-149598273">Ahmad Majidy</a></li>
 </ul>
 </section>
-</section>
-<section id="supported-by" class="level2">
+<section id="supported-by" class="level2 clavr-section">
 <h2 class="anchored" data-anchor-id="supported-by">Supported By</h2>
 <div class="lab-sponsors">
 <p><a href="https://www.alfred.edu/" target="_blank" class="lab-sponsor-card"> <img src="../img/logos/alfred-university.svg" alt="Alfred University logo"> </a></p>
@@ -245,9 +247,107 @@ Partnering with domain experts in healthcare, agriculture, and environmental mon
 </div>
 <!-- ## Openings -->
 <!-- _Information about open positions (graduate students, undergraduate researchers, etc.) goes here._ -->
-
-
 </section>
+</div>
+</div>
+<script>
+(function () {
+  const canvas = document.getElementById("clavr-network");
+  if (!canvas) return;
+  const ctx = canvas.getContext("2d");
+  const page = canvas.parentElement;
+  let width, height, nodes;
+  const AREA_PER_NODE = 5500;
+  const LINK_DIST = 150;
+
+  function resize() {
+    width = canvas.width = page.offsetWidth;
+    height = canvas.height = page.offsetHeight;
+    const count = Math.max(40, Math.round((width * height) / AREA_PER_NODE));
+    makeNodes(count);
+  }
+
+  function makeNodes(count) {
+    nodes = Array.from({ length: count }, () => ({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      vx: (Math.random() - 0.5) * 0.45,
+      vy: (Math.random() - 0.5) * 0.45,
+    }));
+  }
+
+  function step() {
+    ctx.clearRect(0, 0, width, height);
+
+    for (const n of nodes) {
+      n.x += n.vx;
+      n.y += n.vy;
+      if (n.x < 0 || n.x > width) n.vx *= -1;
+      if (n.y < 0 || n.y > height) n.vy *= -1;
+    }
+
+    for (let i = 0; i < nodes.length; i++) {
+      for (let j = i + 1; j < nodes.length; j++) {
+        const a = nodes[i], b = nodes[j];
+        const dx = a.x - b.x, dy = a.y - b.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < LINK_DIST) {
+          ctx.strokeStyle = `rgba(63, 124, 176, ${0.45 * (1 - dist / LINK_DIST)})`;
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y);
+          ctx.lineTo(b.x, b.y);
+          ctx.stroke();
+        }
+      }
+    }
+
+    for (const n of nodes) {
+      ctx.fillStyle = "rgba(44, 74, 102, 0.85)";
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, 2.4, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  resize();
+  requestAnimationFrame(step);
+
+  window.addEventListener("resize", resize);
+  new ResizeObserver(resize).observe(page);
+
+  const revealTargets = document.querySelectorAll(
+    ".clavr-content > .lab-hero, .clavr-content > .lab-intro, .clavr-content > .clavr-section, .clavr-content > .clavr-section .lab-focus-card"
+  );
+  revealTargets.forEach((el, i) => {
+    el.classList.add("clavr-reveal");
+    el.style.transitionDelay = `${Math.min(i * 60, 300)}ms`;
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("clavr-in-view");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0, rootMargin: "200px 0px -40px 0px" }
+  );
+  revealTargets.forEach((el) => observer.observe(el));
+
+  // Safety net: guarantee nothing stays permanently hidden (e.g. TOC jump-links
+  // that skip past the scroll frames IntersectionObserver relies on).
+  setTimeout(() => {
+    revealTargets.forEach((el) => el.classList.add("clavr-in-view"));
+  }, 2500);
+})();
+</script>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

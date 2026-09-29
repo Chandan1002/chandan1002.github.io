@@ -17,7 +17,7 @@ emphasis on machine learning, AI, scientific computing, and web technologies.
 <details class="course-card">
   <summary class="course-header">
     CSCI156 – Introduction to Computer Science  
-    <span class="course-term">Fall 2025 , Spring 2026</span>
+    <span class="course-term">Fall 2025 , Spring 2026,Fall 2026</span>
   </summary>
 
   <div class="course-body">
@@ -30,8 +30,8 @@ emphasis on machine learning, AI, scientific computing, and web technologies.
 
 <details class="course-card">
   <summary class="course-header">
-    CSCI400 – AI for Computer Vision  
-    <span class="course-term">Fall 2025 , Spring 2026</span>
+    CSCI470|ELEC470/570  – AI for Computer Vision  
+    <span class="course-term">Fall 2025 , Spring 2026, Fall 2026</span>
   </summary>
 
   <div class="course-body">

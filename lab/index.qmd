@@ -1,9 +1,26 @@
 ---
 title: ""
+pagetitle: "CLAVR"
 
 ---
 
+<div class="clavr-page">
+
+<canvas id="clavr-network" class="clavr-network"></canvas>
+
+<div class="clavr-content">
+
+<div class="lab-hero">
+<img src="/img/logos/CLAVR-logo.jpg" alt="CLAVR - Perceive. Learn. Advance.">
+</div>
+
 <section class="lab-intro">
+
+<p class="lab-subtitle">Computer Learning & Advanced Visual Research Lab</p>
+
+<p class="lab-tagline">Perceive. Learn. Advance.</p>
+
+CLAVR sits at the critical turning point of computer vision and unsupervised machine learning. By building generalized, self-supervised models that process complex visual inputs without human intervention, our lab creates a foundational computing umbrella capable of advancing diverse real-world systems from optimizing battery grids and parsing geospatial terrain to automating precision ecosystems.
 
 ## Vision
 
@@ -14,6 +31,8 @@ To advance a future where computer vision and machine learning systems can learn
 Our lab develops unsupervised and self-supervised learning methods for object detection, image retrieval, and large-scale vision models, working at the intersection of theory and application to ensure our methods solve real problems, while training the next generation of researchers through mentorship and open collaboration.
 
 </section>
+
+<div class="clavr-section">
 
 ## Research Focus
 
@@ -73,16 +92,24 @@ Our lab develops unsupervised and self-supervised learning methods for object de
 
 </div>
 
+</div>
+
 <!-- ## Members -->
 
 <!-- ### Principal Investigator -->
 
 <!-- **Chandan Kumar** — Assistant Professor, Computer Science, Alfred University -->
 
+<div class="clavr-section">
+
 ### Students
 
 - [Dilafruz Chamanova](https://www.linkedin.com/in/dilafruz-chamanova)
 - [Ahmad Majidy](https://www.linkedin.com/in/ahmad-majidy-149598273)
+
+</div>
+
+<div class="clavr-section">
 
 ## Supported By
 
@@ -105,3 +132,106 @@ Our lab develops unsupervised and self-supervised learning methods for object de
 <!-- ## Openings -->
 
 <!-- _Information about open positions (graduate students, undergraduate researchers, etc.) goes here._ -->
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+(function () {
+  const canvas = document.getElementById("clavr-network");
+  if (!canvas) return;
+  const ctx = canvas.getContext("2d");
+  const page = canvas.parentElement;
+  let width, height, nodes;
+  const AREA_PER_NODE = 5500;
+  const LINK_DIST = 150;
+
+  function resize() {
+    width = canvas.width = page.offsetWidth;
+    height = canvas.height = page.offsetHeight;
+    const count = Math.max(40, Math.round((width * height) / AREA_PER_NODE));
+    makeNodes(count);
+  }
+
+  function makeNodes(count) {
+    nodes = Array.from({ length: count }, () => ({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      vx: (Math.random() - 0.5) * 0.45,
+      vy: (Math.random() - 0.5) * 0.45,
+    }));
+  }
+
+  function step() {
+    ctx.clearRect(0, 0, width, height);
+
+    for (const n of nodes) {
+      n.x += n.vx;
+      n.y += n.vy;
+      if (n.x < 0 || n.x > width) n.vx *= -1;
+      if (n.y < 0 || n.y > height) n.vy *= -1;
+    }
+
+    for (let i = 0; i < nodes.length; i++) {
+      for (let j = i + 1; j < nodes.length; j++) {
+        const a = nodes[i], b = nodes[j];
+        const dx = a.x - b.x, dy = a.y - b.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < LINK_DIST) {
+          ctx.strokeStyle = `rgba(63, 124, 176, ${0.45 * (1 - dist / LINK_DIST)})`;
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y);
+          ctx.lineTo(b.x, b.y);
+          ctx.stroke();
+        }
+      }
+    }
+
+    for (const n of nodes) {
+      ctx.fillStyle = "rgba(44, 74, 102, 0.85)";
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, 2.4, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  resize();
+  requestAnimationFrame(step);
+
+  window.addEventListener("resize", resize);
+  new ResizeObserver(resize).observe(page);
+
+  const revealTargets = document.querySelectorAll(
+    ".clavr-content > .lab-hero, .clavr-content > .lab-intro, .clavr-content > .clavr-section, .clavr-content > .clavr-section .lab-focus-card"
+  );
+  revealTargets.forEach((el, i) => {
+    el.classList.add("clavr-reveal");
+    el.style.transitionDelay = `${Math.min(i * 60, 300)}ms`;
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("clavr-in-view");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0, rootMargin: "200px 0px -40px 0px" }
+  );
+  revealTargets.forEach((el) => observer.observe(el));
+
+  // Safety net: guarantee nothing stays permanently hidden (e.g. TOC jump-links
+  // that skip past the scroll frames IntersectionObserver relies on).
+  setTimeout(() => {
+    revealTargets.forEach((el) => el.classList.add("clavr-in-view"));
+  }, 2500);
+})();
+</script>

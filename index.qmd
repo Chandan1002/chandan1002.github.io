@@ -43,7 +43,7 @@ for leading conferences including ECCV, ICML, and NeurIPS.
 :::
 
 <!-- ================= News Highlights ================= -->
-<section id="news">
+<!-- <section id="news">
   <h2>📢 News Highlights</h2>
   <ul class="news-list">
     <li class="news-item">
@@ -59,4 +59,30 @@ for leading conferences including ECCV, ICML, and NeurIPS.
       <span class="news-date">Aug,2025</span>
     </li>
   </ul>
+</section> -->
+
+<section id="news">
+<h2 class="news-heading">News Highlights</h2>
+
+<div class="news-timeline">
+
+<div class="news-item">
+<div class="news-date">[Nov 2025]</div>
+<div class="news-icon"><span aria-hidden="true">📄</span></div>
+<div class="news-text"><a href="papers/">Two new Research Publications.</a></div>
+</div>
+
+<div class="news-item">
+<div class="news-date">[Oct 2025]</div>
+<div class="news-icon"><img src="img/logos/alfred-university.svg" alt="Alfred University logo"></div>
+<div class="news-text"><a href="https://www.alfred.edu/calendar/2025/10/au-energy-conference.cfm">Gave a talk at AU Energy.</a></div>
+</div>
+
+<div class="news-item">
+<div class="news-date">[Aug 2025]</div>
+<div class="news-icon"><img src="img/logos/alfred-university.svg" alt="Alfred University logo"></div>
+<div class="news-text"><a href="https://www.alfred.edu/academics/faculty-staff/profiles/kumar-chandan.cfm">Started working as Assistant Professor at Alfred University.</a></div>
+</div>
+
+</div>
 </section>
