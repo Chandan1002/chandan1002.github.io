@@ -7,6 +7,8 @@ format:
 css: cv.css
 ---
 
+<div class="clavr-page">
+
 ## Chandan Kumar
 
 **Assistant Professor**  
@@ -209,3 +211,43 @@ Skills used: SAS, SQL, IBM-Netezza, DB2,Tableau, R, Python, Microsoft Excel.
 
 ### Resume
 - **Description:** Click [here](Chandan_CV.pdf) to view my resume.
+
+</div>
+
+<script>
+(function () {
+  // Each top-level CV section (Education, Experience, Publications, ...)
+  // fades in as a block when scrolled into view.
+  const sections = document.querySelectorAll(".clavr-page > section.level2");
+  sections.forEach((el, i) => {
+    el.classList.add("clavr-reveal");
+    el.style.transitionDelay = `${Math.min(i * 40, 200)}ms`;
+  });
+
+  // Experience/teaching entries cascade in one after another within their section.
+  const cards = document.querySelectorAll(".clavr-page details.cv-section");
+  cards.forEach((el, i) => {
+    el.classList.add("clavr-reveal");
+    el.style.transitionDelay = `${Math.min((i % 8) * 60, 300)}ms`;
+  });
+
+  const targets = [...sections, ...cards];
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("clavr-in-view");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0, rootMargin: "200px 0px -40px 0px" }
+  );
+  targets.forEach((el) => observer.observe(el));
+
+  setTimeout(() => {
+    targets.forEach((el) => el.classList.add("clavr-in-view"));
+  }, 2500);
+})();
+</script>

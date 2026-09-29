@@ -2,6 +2,8 @@
 title: Papers
 ---
 
+<div class="clavr-page">
+
 # 2025
 
 - Kumar, C., Herrera-Gerena, J., Just, J., Darr, M., Jannesari, A. (2026). A Novel Unsupervised Contrastive Learning Approach for Efficient Object Lookup and Retrieval. In: Arai, K. (eds) Intelligent Systems and Applications. IntelliSys 2025. Lecture Notes in Networks and Systems, vol 1660. Springer, Cham. https://doi.org/10.1007/978-3-032-07109-5_36
@@ -34,6 +36,9 @@ title: Papers
 # 2021
 
 - Vaddi, Subrahmanyam, Dongyoun Kim, Chandan Kumar, Shafqat Shad, and Ali Jannesari. "Efficient Object Detection Model for Real-time UAV Application." Computer and Information Science 14, no. 1 (2021).
+
+</div>
+
 <!-- references -->
 
 

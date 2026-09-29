@@ -390,6 +390,17 @@ body {
   transform: translateY(0);
 }
 
+.notes-card-reveal {
+  opacity: 0;
+  transform: translateY(55px) scale(0.94);
+  transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.notes-card-reveal.clavr-in-view {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
 .lab-hero {
   margin: 0 0 2rem 0;
   border-radius: 18px;

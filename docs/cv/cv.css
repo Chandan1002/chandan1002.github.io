@@ -32,6 +32,19 @@ from: https://github.com/quarto-dev/quarto-cli/discussions/2538#discussioncommen
   .no-print {
       display: none;
   }
+
+  .clavr-page {
+      background: none;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      margin: 0;
+  }
+
+  .clavr-reveal {
+      opacity: 1 !important;
+      transform: none !important;
+  }
   .print-only {
       display: block;
   }

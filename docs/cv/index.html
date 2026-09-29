@@ -74,7 +74,6 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../assets/custom.css">
 <link rel="stylesheet" href="cv.css">
 <meta property="og:title" content="– Chandan Kumar">
-<meta property="og:description" content="Dr.&nbsp;Chandan Kumar is currently working as an Assistant Professor in Computer Science Department at Alfred University, New York.">
 <meta property="og:site_name" content="Chandan Kumar">
 </head>
 
@@ -142,41 +141,16 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#chandan-kumar" id="toc-chandan-kumar" class="nav-link active" data-scroll-target="#chandan-kumar">Chandan Kumar</a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a>
-  <ul class="collapse">
-  <li><a href="#iowa-state-university-usa" id="toc-iowa-state-university-usa" class="nav-link" data-scroll-target="#iowa-state-university-usa">Iowa State University, USA</a></li>
-  <li><a href="#iowa-state-university-usa-1" id="toc-iowa-state-university-usa-1" class="nav-link" data-scroll-target="#iowa-state-university-usa-1">Iowa State University, USA</a></li>
-  <li><a href="#bit-sindri-india" id="toc-bit-sindri-india" class="nav-link" data-scroll-target="#bit-sindri-india">BIT Sindri, India</a></li>
-  </ul></li>
-  <li><a href="#professional-experience" id="toc-professional-experience" class="nav-link" data-scroll-target="#professional-experience">Professional Experience</a></li>
-  <li><a href="#teaching-experience" id="toc-teaching-experience" class="nav-link" data-scroll-target="#teaching-experience">Teaching Experience</a></li>
-  <li><a href="#publications-selected" id="toc-publications-selected" class="nav-link" data-scroll-target="#publications-selected">Publications (Selected)</a></li>
-  <li><a href="#technical-skills" id="toc-technical-skills" class="nav-link" data-scroll-target="#technical-skills">Technical Skills</a></li>
-  <li><a href="#awards-grants" id="toc-awards-grants" class="nav-link" data-scroll-target="#awards-grants">Awards &amp; Grants</a></li>
-  <li><a href="#service-leadership" id="toc-service-leadership" class="nav-link" data-scroll-target="#service-leadership">Service &amp; Leadership</a>
-  <ul class="collapse">
-  <li><a href="#reviewer" id="toc-reviewer" class="nav-link" data-scroll-target="#reviewer">Reviewer</a></li>
-  </ul></li>
-  <li><a href="#professional-memberships" id="toc-professional-memberships" class="nav-link" data-scroll-target="#professional-memberships">Professional Memberships</a></li>
-  <li><a href="#invited-talks" id="toc-invited-talks" class="nav-link" data-scroll-target="#invited-talks">Invited Talks</a>
-  <ul class="collapse">
-  <li><a href="#resume" id="toc-resume" class="nav-link" data-scroll-target="#resume">Resume</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
+<div class="clavr-page">
 <section id="chandan-kumar" class="level2">
 <h2 class="anchored" data-anchor-id="chandan-kumar">Chandan Kumar</h2>
 <p><strong>Assistant Professor</strong><br>
@@ -407,10 +381,48 @@ International 7-in-1 Symposium, CGC, Herning, Denmark.</li>
 <ul>
 <li><strong>Description:</strong> Click <a href="Chandan_CV.pdf">here</a> to view my resume.</li>
 </ul>
-
-
 </section>
 </section>
+</div>
+<script>
+(function () {
+  // Each top-level CV section (Education, Experience, Publications, ...)
+  // fades in as a block when scrolled into view.
+  const sections = document.querySelectorAll(".clavr-page > section.level2");
+  sections.forEach((el, i) => {
+    el.classList.add("clavr-reveal");
+    el.style.transitionDelay = `${Math.min(i * 40, 200)}ms`;
+  });
+
+  // Experience/teaching entries cascade in one after another within their section.
+  const cards = document.querySelectorAll(".clavr-page details.cv-section");
+  cards.forEach((el, i) => {
+    el.classList.add("clavr-reveal");
+    el.style.transitionDelay = `${Math.min((i % 8) * 60, 300)}ms`;
+  });
+
+  const targets = [...sections, ...cards];
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("clavr-in-view");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0, rootMargin: "200px 0px -40px 0px" }
+  );
+  targets.forEach((el) => observer.observe(el));
+
+  setTimeout(() => {
+    targets.forEach((el) => el.classList.add("clavr-in-view"));
+  }, 2500);
+})();
+</script>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
