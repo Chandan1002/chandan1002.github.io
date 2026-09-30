@@ -46,10 +46,6 @@ website:
         text: CLAVR Lab
 
     right:
-      - icon: github
-        href: https://github.com/yourusername
-        aria-label: GitHub
-
       - icon: google-scholar
         href: https://scholar.google.com/citations?user=XXXX
         aria-label: Google Scholar    
@@ -75,7 +71,7 @@ format:
     theme: default
     format:
   #html:
-    css: assets/custom.v3.css
+    css: assets/custom.v4.css
     include-after-body: assets/nav-active.html
 
       #- cosmo
