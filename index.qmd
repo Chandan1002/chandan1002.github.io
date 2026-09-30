@@ -10,34 +10,49 @@ css: assets/custom.css
 
 <div class="clavr-page">
 
+<canvas id="footprint-canvas" class="clavr-network"></canvas>
+
+<div class="clavr-content">
+
 <!-- ================= Profile & Bio Columns ================= -->
-::: {.columns}
+::: {.columns .hero-columns}
 
 ::: {.column width="30%"}
 ![](assets/profile.jpg){.profile-img}
 
-🎓 [Google Scholar](https://scholar.google.com/citations?hl=en&user=que-rRAAAAAJ&view_op=list_works)  
-💻 [GitHub](https://github.com/Chandan1002)  
-🔗 [LinkedIn](https://www.linkedin.com/in/chandan1002/)  
-✉️ [Email](mailto:kumar@alfred.edu)
+<div class="social-links">
+<a href="https://scholar.google.com/citations?hl=en&user=que-rRAAAAAJ&view_op=list_works" target="_blank"><span aria-hidden="true">🎓</span> Google Scholar</a>
+<a href="https://github.com/Chandan1002" target="_blank"><span aria-hidden="true">💻</span> GitHub</a>
+<a href="https://www.linkedin.com/in/chandan1002/" target="_blank"><span aria-hidden="true">🔗</span> LinkedIn</a>
+<a href="mailto:kumar@alfred.edu"><span aria-hidden="true">✉️</span> Email</a>
+</div>
 :::
 
 
 ::: {.column width="70%"}
 
-### Assistant Professor, Computer Science  
+<div class="hero-name">Chandan Kumar</div>
+
+### Assistant Professor, Computer Science
 Alfred University, New York
 
-I am an Assistant Professor of Computer Science at Alfred University and a researcher 
-in Computer Vision and Deep Learning, specializing in unsupervised learning, real-time  
-vision systems, and multimodal foundation models. I completed my Ph.D. at Iowa State  
-University, where my research focused on scalable computer vision methods for object  
+<div class="home-tags">
+<span>Computer Vision</span>
+<span>Deep Learning</span>
+<span>Unsupervised Learning</span>
+<span>Multimodal Models</span>
+</div>
+
+I am an Assistant Professor of Computer Science at Alfred University and a researcher
+in Computer Vision and Deep Learning, specializing in unsupervised learning, real-time
+vision systems, and multimodal foundation models. I completed my Ph.D. at Iowa State
+University, where my research focused on scalable computer vision methods for object
 discovery, semantic segmentation, and building footprint reconstruction.
 
-I worked at the intersection of theory and practice through research collaborations with  
-Oak Ridge National Laboratory, with publications in top-tier venues such as ICLR and  
-CVPR and support from NSF-funded projects. My work emphasizes developing robust,  
-real-world AI systems, and I actively contribute to the research community as a reviewer  
+I worked at the intersection of theory and practice through research collaborations with
+Oak Ridge National Laboratory, with publications in top-tier venues such as ICLR and
+CVPR and support from NSF-funded projects. My work emphasizes developing robust,
+real-world AI systems, and I actively contribute to the research community as a reviewer
 for leading conferences including ECCV, ICML, and NeurIPS.
 
 :::
@@ -68,10 +83,10 @@ for leading conferences including ECCV, ICML, and NeurIPS.
 
 <div class="news-timeline">
 
-<div class="news-item">
+<div class="news-item is-latest">
 <div class="news-date">[Nov 2025]</div>
 <div class="news-icon"><span aria-hidden="true">📄</span></div>
-<div class="news-text"><a href="papers/">Two new Research Publications.</a></div>
+<div class="news-text"><span class="news-badge">Latest</span><a href="papers/">Two new Research Publications.</a></div>
 </div>
 
 <div class="news-item">
@@ -79,6 +94,7 @@ for leading conferences including ECCV, ICML, and NeurIPS.
 <div class="news-icon"><img src="img/logos/alfred-university.svg" alt="Alfred University logo"></div>
 <div class="news-text"><a href="https://www.alfred.edu/calendar/2025/10/au-energy-conference.cfm">Gave a talk at AU Energy.</a></div>
 </div>
+
 
 <div class="news-item">
 <div class="news-date">[Aug 2025]</div>
@@ -90,3 +106,138 @@ for leading conferences including ECCV, ICML, and NeurIPS.
 </section>
 
 </div>
+
+</div>
+
+<script>
+(function () {
+  // Repeatable scroll reveal: elements animate in every time they cross the
+  // viewport edge, in either scroll direction.
+  const targets = document.querySelectorAll(".hero-columns, .news-item");
+  targets.forEach((el) => el.classList.add("home-reveal"));
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle("clavr-in-view", entry.isIntersecting);
+      });
+    },
+    { threshold: 0.15, rootMargin: "0px 0px -60px 0px" }
+  );
+  targets.forEach((el) => observer.observe(el));
+})();
+</script>
+
+<script>
+(function () {
+  const canvas = document.getElementById("footprint-canvas");
+  const page = canvas ? canvas.parentElement : null;
+  if (!canvas || !page) return;
+
+  const ctx = canvas.getContext("2d");
+  let width, height;
+  const footprints = [];
+  const LIFE_MS = 1700;
+  const MIN_STEP = 30;
+  let lastX = null;
+  let lastY = null;
+  let side = 1;
+
+  function resize() {
+    width = canvas.width = page.offsetWidth;
+    height = canvas.height = page.offsetHeight;
+  }
+  resize();
+  window.addEventListener("resize", resize);
+  new ResizeObserver(resize).observe(page);
+
+  function handleMove(e) {
+    const rect = page.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    if (lastX === null) {
+      lastX = x;
+      lastY = y;
+      return;
+    }
+
+    const dx = x - lastX;
+    const dy = y - lastY;
+    const dist = Math.sqrt(dx * dx + dy * dy);
+
+    if (dist >= MIN_STEP) {
+      const angle = Math.atan2(dy, dx);
+      side *= -1;
+      footprints.push({ x, y, angle, side, born: performance.now() });
+      if (footprints.length > 80) footprints.shift();
+      lastX = x;
+      lastY = y;
+    }
+  }
+
+  page.addEventListener("mousemove", handleMove);
+  page.addEventListener("mouseleave", () => {
+    lastX = null;
+    lastY = null;
+  });
+
+  function drawFootprint(fp, now) {
+    const age = now - fp.born;
+    if (age > LIFE_MS) return false;
+
+    const opacity = 0.55 * (1 - age / LIFE_MS);
+    ctx.save();
+    ctx.translate(fp.x, fp.y);
+    ctx.rotate(fp.angle + Math.PI / 2);
+    ctx.translate(fp.side * 5, 0);
+    ctx.scale(fp.side, 1);
+    ctx.globalAlpha = opacity;
+    ctx.fillStyle = "#2c5d85";
+
+    // heel
+    ctx.beginPath();
+    ctx.ellipse(0, 11, 3.4, 5.2, 0, 0, Math.PI * 2);
+    ctx.fill();
+
+    // arch (narrower waist of the sole)
+    ctx.beginPath();
+    ctx.ellipse(-0.3, 3, 2.9, 5, -0.05, 0, Math.PI * 2);
+    ctx.fill();
+
+    // ball of the foot (wider)
+    ctx.beginPath();
+    ctx.ellipse(0.2, -5, 4.3, 5.3, 0, 0, Math.PI * 2);
+    ctx.fill();
+
+    // toes: big toe (medial) down to little toe, graduated size
+    const toes = [
+      { dx: -3.4, dy: -10.8, r: 1.9 },
+      { dx: -1.0, dy: -11.6, r: 1.5 },
+      { dx: 1.2, dy: -11.3, r: 1.25 },
+      { dx: 3.2, dy: -10.6, r: 1.05 },
+      { dx: 4.7, dy: -9.4, r: 0.85 },
+    ];
+    toes.forEach((t) => {
+      ctx.beginPath();
+      ctx.ellipse(t.dx, t.dy, t.r, t.r * 1.25, 0, 0, Math.PI * 2);
+      ctx.fill();
+    });
+
+    ctx.restore();
+    return true;
+  }
+
+  function step() {
+    ctx.clearRect(0, 0, width, height);
+    const now = performance.now();
+    for (let i = footprints.length - 1; i >= 0; i--) {
+      if (!drawFootprint(footprints[i], now)) {
+        footprints.splice(i, 1);
+      }
+    }
+    requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+})();
+</script>
