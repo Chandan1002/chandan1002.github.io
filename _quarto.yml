@@ -75,7 +75,7 @@ format:
     theme: default
     format:
   #html:
-    css: assets/custom.css
+    css: assets/custom.v1.css
 
       #- cosmo
      # - custom.scss
