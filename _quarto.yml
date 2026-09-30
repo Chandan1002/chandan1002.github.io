@@ -43,7 +43,7 @@ website:
         text: Teaching  
 
       - href: lab/
-        text: CLAVR
+        text: CLAVR Lab
 
     right:
       - icon: github
