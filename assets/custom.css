@@ -64,6 +64,32 @@
   box-shadow: 0 0 0 4px #2c5d85, 0 18px 36px rgba(24, 39, 58, 0.28);
 }
 
+.hero-columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .hero-columns > .column {
+    width: 100% !important;
+  }
+
+  .hero-columns > .column:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .profile-img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
 .columns {
   gap: 2.5rem;
 }
