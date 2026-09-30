@@ -36,11 +36,11 @@ website:
         text: CV
       # - href: media
       #   text: Media
-      - href: posts/
-        text: My Notes
+      # - href: posts/
+      #   text: My Notes
 
       - href: teaching/
-        text: Teaching  
+        text: Teaching
 
       - href: lab/
         text: CLAVR Lab

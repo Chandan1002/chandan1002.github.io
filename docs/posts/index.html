@@ -168,10 +168,6 @@ window.Quarto = {
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../posts/"> 
-<span class="menu-text">My Notes</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../teaching/"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
@@ -313,39 +309,24 @@ document.addEventListener("DOMContentLoaded", function () {
     const age = now - fp.born;
     if (age > LIFE_MS) return false;
 
-    const opacity = 0.55 * (1 - age / LIFE_MS);
+    const opacity = 0.65 * (1 - age / LIFE_MS);
     ctx.save();
     ctx.translate(fp.x, fp.y);
     ctx.rotate(fp.angle + Math.PI / 2);
-    ctx.translate(fp.side * 5, 0);
+    ctx.translate(fp.side * 6, 0);
     ctx.scale(fp.side, 1);
     ctx.globalAlpha = opacity;
     ctx.fillStyle = "#2c5d85";
 
+    // forefoot pad
     ctx.beginPath();
-    ctx.ellipse(0, 11, 3.4, 5.2, 0, 0, Math.PI * 2);
+    ctx.ellipse(0, -5, 5.2, 5.8, 0, 0, Math.PI * 2);
     ctx.fill();
 
+    // heel pad (gap between the two mimics a shoe-sole print)
     ctx.beginPath();
-    ctx.ellipse(-0.3, 3, 2.9, 5, -0.05, 0, Math.PI * 2);
+    ctx.ellipse(0, 8.5, 3.4, 4.2, 0, 0, Math.PI * 2);
     ctx.fill();
-
-    ctx.beginPath();
-    ctx.ellipse(0.2, -5, 4.3, 5.3, 0, 0, Math.PI * 2);
-    ctx.fill();
-
-    const toes = [
-      { dx: -3.4, dy: -10.8, r: 1.9 },
-      { dx: -1.0, dy: -11.6, r: 1.5 },
-      { dx: 1.2, dy: -11.3, r: 1.25 },
-      { dx: 3.2, dy: -10.6, r: 1.05 },
-      { dx: 4.7, dy: -9.4, r: 0.85 },
-    ];
-    toes.forEach((t) => {
-      ctx.beginPath();
-      ctx.ellipse(t.dx, t.dy, t.r, t.r * 1.25, 0, 0, Math.PI * 2);
-      ctx.fill();
-    });
 
     ctx.restore();
     return true;
@@ -370,7 +351,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="QUklMkNMb3NzJTIwRnVuY3Rpb25z" data-listing-date-sort="1705122000000" data-listing-file-modified-sort="1790788050476" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="336">
+<div class="quarto-post image-right" data-index="0" data-categories="QUklMkNMb3NzJTIwRnVuY3Rpb25z" data-listing-date-sort="1705122000000" data-listing-file-modified-sort="1790793180372" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="336">
 <div class="thumbnail"><a href="../posts/loss-functions/index.html" class="no-external">
 
 <img loading="lazy" src="../posts/loss-functions/activation.jpeg" class="thumbnail-image">
@@ -402,7 +383,7 @@ Chandan Kumar
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="QUklMkNSZXN1bHRzJTIwTWV0cmljcw==" data-listing-date-sort="1705122000000" data-listing-file-modified-sort="1790788050479" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="240">
+<div class="quarto-post image-right" data-index="1" data-categories="QUklMkNSZXN1bHRzJTIwTWV0cmljcw==" data-listing-date-sort="1705122000000" data-listing-file-modified-sort="1790793180374" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="240">
 <div class="thumbnail"><a href="../posts/results_metrics/index.html" class="no-external">
 
 <img loading="lazy" src="../posts/results_metrics/activation.jpeg" class="thumbnail-image">
@@ -434,7 +415,7 @@ Chandan Kumar
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="QUklMkNTdGF0aXN0aWNzJTJDd3JpdGluZw==" data-listing-date-sort="1704517200000" data-listing-file-modified-sort="1790788050480" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1449">
+<div class="quarto-post image-right" data-index="2" data-categories="QUklMkNTdGF0aXN0aWNzJTJDd3JpdGluZw==" data-listing-date-sort="1704517200000" data-listing-file-modified-sort="1790793180374" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1449">
 <div class="thumbnail"><a href="../posts/random-notes/index.html" class="no-external">
 
 <img loading="lazy" src="../posts/random-notes/Statistics.jpeg" class="thumbnail-image">
@@ -468,7 +449,7 @@ Chandan Kumar
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="QUklMkNTdGF0aXN0aWNzJTJDd3JpdGluZw==" data-listing-date-sort="1704517200000" data-listing-file-modified-sort="1790788050481" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1503">
+<div class="quarto-post image-right" data-index="3" data-categories="QUklMkNTdGF0aXN0aWNzJTJDd3JpdGluZw==" data-listing-date-sort="1704517200000" data-listing-file-modified-sort="1790793180375" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1503">
 <div class="thumbnail"><a href="../posts/statistics-notes/index.html" class="no-external">
 
 <img loading="lazy" src="../posts/statistics-notes/Statistics.jpeg" class="thumbnail-image">
@@ -502,7 +483,7 @@ Chandan Kumar
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="QUklMkNBY3RpdmF0aW9uJTIwRnVuY3Rpb25z" data-listing-date-sort="1704085200000" data-listing-file-modified-sort="1790788050478" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1918">
+<div class="quarto-post image-right" data-index="4" data-categories="QUklMkNBY3RpdmF0aW9uJTIwRnVuY3Rpb25z" data-listing-date-sort="1704085200000" data-listing-file-modified-sort="1790793180373" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1918">
 <div class="thumbnail"><a href="../posts/notes-on-activation-functions/index.html" class="no-external">
 
 <img loading="lazy" src="../posts/notes-on-activation-functions/activation.jpeg" class="thumbnail-image">
