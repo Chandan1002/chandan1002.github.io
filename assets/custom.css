@@ -1,9 +1,9 @@
 /* ================= Header Nav Bar ================= */
 .navbar {
-  background-color: #44719e;
+  background: linear-gradient(135deg, #3f7cb0, #2c5d85);
   padding: 12px 0;
   text-align: center;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 12px rgba(17, 33, 51, 0.25);
   font-size: 1.05rem;
   position: sticky;
   top: 0;
@@ -13,6 +13,8 @@
 .navbar-brand,
 .navbar-title {
   color: #fff !important;
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 
 .navbar .nav-link,
@@ -29,21 +31,51 @@
 }
 
 .navbar li a {
+  position: relative;
   text-decoration: none;
-  color: white;
-  padding: 10px 18px;
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  padding: 10px 6px;
   border-radius: 6px;
-  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+
+.navbar li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 2px;
+  height: 2px;
+  border-radius: 2px;
+  background: #fff;
+  transition: left 0.25s ease, right 0.25s ease;
 }
 
 .navbar li a:hover {
-  background-color: #aae5a9;
-  color: rgb(7, 6, 6);
+  color: #fff;
   transform: translateY(-2px);
 }
 
+.navbar li a:hover::after {
+  left: 8%;
+  right: 8%;
+}
+
 .navbar li a:active {
-  background-color: #65d0da;
+  transform: translateY(0);
+}
+
+.navbar li a.nav-page-active {
+  color: #fff;
+  font-weight: 700;
+}
+
+.navbar li a.nav-page-active::after {
+  left: 8%;
+  right: 8%;
+  background: #ffd76a;
 }
 
 /* ================= Profile Section ================= */

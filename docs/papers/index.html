@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="../assets/custom.v2.css">
+<link rel="stylesheet" href="../assets/custom.v3.css">
 <meta property="og:title" content="Papers – Chandan Kumar">
 <meta property="og:site_name" content="Chandan Kumar">
 </head>
@@ -321,6 +321,17 @@ ul.task-list li input[type="checkbox"] {
 
 
 </main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const current = window.location.pathname.replace(/index\.html$/, "");
+  document.querySelectorAll(".navbar .nav-link").forEach((link) => {
+    const linkPath = new URL(link.href, window.location.origin).pathname.replace(/index\.html$/, "");
+    if (linkPath === current || (linkPath !== "/" && current.startsWith(linkPath))) {
+      link.classList.add("nav-page-active");
+    }
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

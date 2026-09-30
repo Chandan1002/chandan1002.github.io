@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="../../assets/custom.v2.css">
+<link rel="stylesheet" href="../../assets/custom.v3.css">
 <meta property="og:title" content="Very Random Notes – Chandan Kumar">
 <meta property="og:description" content="Statistics Notes. Here’s why.">
 <meta property="og:image" content="https://chandankumar.ai/posts/random-notes/Statistics.jpeg">
@@ -250,6 +250,17 @@ ul.task-list li input[type="checkbox"] {
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-kumar2024" class="csl-entry quarto-appendix-citeas" role="listitem">
 Chandan Kumar. 2024. <span>“Very Random Notes.”</span> <a href="https://chandankumar.ai/posts/random-notes/">https://chandankumar.ai/posts/random-notes/</a>.
 </div></div></section></div></main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const current = window.location.pathname.replace(/index\.html$/, "");
+  document.querySelectorAll(".navbar .nav-link").forEach((link) => {
+    const linkPath = new URL(link.href, window.location.origin).pathname.replace(/index\.html$/, "");
+    if (linkPath === current || (linkPath !== "/" && current.startsWith(linkPath))) {
+      link.classList.add("nav-page-active");
+    }
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="../assets/custom.v2.css">
+<link rel="stylesheet" href="../assets/custom.v3.css">
 <meta property="og:title" content="Chandan Kumar">
 <meta property="og:description" content="Dr.&nbsp;Chandan Kumar is currently working as an Assistant Professor in Computer Science Department at Alfred University, New York.">
 <meta property="og:site_name" content="Chandan Kumar">
@@ -155,6 +155,17 @@ ul.task-list li input[type="checkbox"] {
 
 
 </main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const current = window.location.pathname.replace(/index\.html$/, "");
+  document.querySelectorAll(".navbar .nav-link").forEach((link) => {
+    const linkPath = new URL(link.href, window.location.origin).pathname.replace(/index\.html$/, "");
+    if (linkPath === current || (linkPath !== "/" && current.startsWith(linkPath))) {
+      link.classList.add("nav-page-active");
+    }
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

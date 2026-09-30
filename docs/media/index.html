@@ -131,7 +131,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../assets/custom.v2.css">
+<link rel="stylesheet" href="../assets/custom.v3.css">
 <link rel="alternate" type="application/rss+xml" title="Chandan Kumar" href="index.xml" data-external="1"><meta property="og:title" content="In the media – Chandan Kumar">
 <meta property="og:image" content="https://chandankumar.ai/media/tech-for-good/header.jpeg">
 <meta property="og:site_name" content="Chandan Kumar">
@@ -325,6 +325,17 @@ Chris von Csefalvay
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const current = window.location.pathname.replace(/index\.html$/, "");
+  document.querySelectorAll(".navbar .nav-link").forEach((link) => {
+    const linkPath = new URL(link.href, window.location.origin).pathname.replace(/index\.html$/, "");
+    if (linkPath === current || (linkPath !== "/" && current.startsWith(linkPath))) {
+      link.classList.add("nav-page-active");
+    }
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

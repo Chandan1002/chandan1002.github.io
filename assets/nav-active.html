@@ -1,0 +1,11 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const current = window.location.pathname.replace(/index\.html$/, "");
+  document.querySelectorAll(".navbar .nav-link").forEach((link) => {
+    const linkPath = new URL(link.href, window.location.origin).pathname.replace(/index\.html$/, "");
+    if (linkPath === current || (linkPath !== "/" && current.startsWith(linkPath))) {
+      link.classList.add("nav-page-active");
+    }
+  });
+});
+</script>

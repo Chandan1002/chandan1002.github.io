@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="../../assets/custom.v2.css">
+<link rel="stylesheet" href="../../assets/custom.v3.css">
 <meta property="og:title" content="Corona in den USA: Mediziner warnen nun vor Injektion von Desinfektionsmittel – Chandan Kumar">
 <meta property="og:description" content="Injecting disinfectants continues to be a bad idea.">
 <meta property="og:image" content="https://chandankumar.ai/media/fr-disinfectants/header.png">
@@ -214,6 +214,17 @@ ul.task-list li input[type="checkbox"] {
 Csefalvay, Chris von. 2020. <span>“Corona in Den USA: Mediziner Warnen
 Nun Vor Injektion von Desinfektionsmittel.”</span> May 11, 2020. <a href="https://chrisvoncsefalvay.com/media/fr-disinfectants">https://chrisvoncsefalvay.com/media/fr-disinfectants</a>.
 </div></div></section></div></main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const current = window.location.pathname.replace(/index\.html$/, "");
+  document.querySelectorAll(".navbar .nav-link").forEach((link) => {
+    const linkPath = new URL(link.href, window.location.origin).pathname.replace(/index\.html$/, "");
+    if (linkPath === current || (linkPath !== "/" && current.startsWith(linkPath))) {
+      link.classList.add("nav-page-active");
+    }
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

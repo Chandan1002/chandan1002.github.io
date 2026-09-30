@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="../../assets/custom.v2.css">
+<link rel="stylesheet" href="../../assets/custom.v3.css">
 <meta property="og:title" content="Koronavírus: az USA-ban már használják, itthon még nem kellett a magyar cég adatelemző programja – Chandan Kumar">
 <meta property="og:description" content="Commenting on our work on the COVID-19 data set and the relevance of data in a pandemic.">
 <meta property="og:image" content="https://chandankumar.ai/media/euronews-covid/header.webp">
@@ -213,6 +213,17 @@ Csefalvay, Chris von. 2020. <span>“Koronavírus: Az USA-Ban Már
 Használják, Itthon Még Nem Kellett a Magyar Cég Adatelemző
 Programja.”</span> April 17, 2020. <a href="https://chrisvoncsefalvay.com/media/euronews-covid">https://chrisvoncsefalvay.com/media/euronews-covid</a>.
 </div></div></section></div></main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const current = window.location.pathname.replace(/index\.html$/, "");
+  document.querySelectorAll(".navbar .nav-link").forEach((link) => {
+    const linkPath = new URL(link.href, window.location.origin).pathname.replace(/index\.html$/, "");
+    if (linkPath === current || (linkPath !== "/" && current.startsWith(linkPath))) {
+      link.classList.add("nav-page-active");
+    }
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

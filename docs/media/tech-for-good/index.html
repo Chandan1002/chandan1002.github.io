@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="../../assets/custom.v2.css">
+<link rel="stylesheet" href="../../assets/custom.v3.css">
 <meta property="og:title" content="Tech for Good podcast – Chandan Kumar">
 <meta property="og:description" content="A fascinating interview with Ben Mouncer on the Tech for Good podcast.">
 <meta property="og:image" content="https://chandankumar.ai/media/tech-for-good/header.jpeg">
@@ -207,6 +207,17 @@ ul.task-list li input[type="checkbox"] {
 Csefalvay, Chris von. 2023. <span>“Tech for Good Podcast.”</span> March
 7, 2023. <a href="https://chrisvoncsefalvay.com/media/tech-for-good">https://chrisvoncsefalvay.com/media/tech-for-good</a>.
 </div></div></section></div></main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const current = window.location.pathname.replace(/index\.html$/, "");
+  document.querySelectorAll(".navbar .nav-link").forEach((link) => {
+    const linkPath = new URL(link.href, window.location.origin).pathname.replace(/index\.html$/, "");
+    if (linkPath === current || (linkPath !== "/" && current.startsWith(linkPath))) {
+      link.classList.add("nav-page-active");
+    }
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
