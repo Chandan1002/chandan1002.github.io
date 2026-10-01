@@ -71,7 +71,7 @@ format:
     theme: default
     format:
   #html:
-    css: assets/custom.v7.css
+    css: assets/custom.v9.css
     include-after-body: assets/nav-active.html
 
       #- cosmo

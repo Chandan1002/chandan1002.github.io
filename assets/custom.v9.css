@@ -244,6 +244,18 @@
   box-shadow: 0 4px 10px rgba(24, 39, 58, 0.12);
 }
 
+.social-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.cv-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
 
 /* ================= Contact Box ================= */
 .contact-box {
