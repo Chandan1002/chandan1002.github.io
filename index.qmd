@@ -89,6 +89,12 @@ for leading conferences including ECCV, ICML, and NeurIPS.
 </div>
 
 <div class="news-item">
+<div class="news-date">[Sep 2026]</div>
+<div class="news-icon"><span aria-hidden="true">🎪</span></div>
+<div class="news-text"><a href="https://www.alfred.edu/about/news/pressreleases/general/2026/alfred-university-team-showcases-battery-artificial-intelligence-at-new-york-state-fair.cfm" target="_blank">Great New York State Fair in Syracuse.</a></div>
+</div>
+
+<div class="news-item">
 <div class="news-date">[Jul 2026]</div>
 <div class="news-icon"><span aria-hidden="true">💰</span></div>
 <div class="news-text"><a href="https://wellsvillesun.com/blog/2026/08/04/alfred-university-leads-project-to-develop-battery-storage-microgrid-control-system/" target="_blank">Received Grant from NENY.</a></div>
@@ -119,25 +125,6 @@ for leading conferences including ECCV, ICML, and NeurIPS.
 </div>
 
 </div>
-
-<script>
-(function () {
-  // Repeatable scroll reveal: elements animate in every time they cross the
-  // viewport edge, in either scroll direction.
-  const targets = document.querySelectorAll(".hero-columns, .news-item");
-  targets.forEach((el) => el.classList.add("home-reveal"));
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        entry.target.classList.toggle("clavr-in-view", entry.isIntersecting);
-      });
-    },
-    { threshold: 0, rootMargin: "0px 0px 250px 0px" }
-  );
-  targets.forEach((el) => observer.observe(el));
-})();
-</script>
 
 <script>
 (function () {
