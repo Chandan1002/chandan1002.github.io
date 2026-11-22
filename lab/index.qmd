@@ -104,6 +104,12 @@ Our lab develops unsupervised and self-supervised learning methods for object de
 
 <div class="clavr-section">
 
+## Members
+
+### Principal Investigator
+
+**Chandan Kumar** — Assistant Professor, Computer Science, Alfred University
+
 ### Students
 
 - [Dilafruz Chamanova](https://www.linkedin.com/in/dilafruz-chamanova)
