@@ -137,9 +137,9 @@ Our lab develops unsupervised and self-supervised learning methods for object de
 <img src="/img/logos/musco-lighting.svg" alt="Musco Lighting logo">
 </a>
 
-<a href="https://www.cohumain.ai/" target="_blank" class="lab-sponsor-card">
+<!-- <a href="https://www.cohumain.ai/" target="_blank" class="lab-sponsor-card">
 <img src="/img/logos/COHUMAIN-LABS-LOGO.png" alt="Cohumain lab logo">
-</a>
+</a> -->
 
 </div>
 
